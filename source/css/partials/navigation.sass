@@ -1,7 +1,142 @@
+
+.page-work,
+  .page-work__link,
+    color: $c-red !important
+.page-profile
+  .page-profile__link
+    color: $c-red !important
+.page-services
+  .page-services__link
+    color: $c-red !important
+.page-blog
+  .page-blog__link
+    color: $c-red !important    
+
+
 .nav-bg
   +box-shadow(0 0 6px 0 rgba(0,0,0,0.23))
+
+a.logo, a.logo:visited
+  color: $c-red
+  width: 120px
+  float: left
+  @media only screen and (min-width: $second-break)
+    width: 300px
+  @media only screen and (min-width: $third-break)
+    width: 120px  
+
+.nav-bar
+  width: 100%
+  display: block
+  overflow: hidden  
+  @media only screen and (min-width: $second-break)
+    display: initial
+
 .red-bar
   width: 100%
   height: 0.3em
   display: block
   background: $c-red  
+
+.language
+  position: absolute
+  right: 0
+  font-weight: 900
+  font-size: $f-s
+  color: lighten($c-lightgrey, 30%)
+  +single-transition(all, 0.2s, ease-out)
+  &:hover, &:focus
+    color: $c-red  
+
+.nav-container
+  max-height: 0px
+  +opacity(0)
+  +single-transition(all, 0.2s, ease-out)
+  @media only screen and (min-width: $second-break)
+    float: left
+    +opacity(1)
+    max-height: auto
+    padding-bottom: $l-m
+  @media only screen and (min-width: $third-break)
+    float: right
+    margin-top: 2.25em
+
+.nav-wrap
+  position: relative
+  padding: 0.5em 0
+
+.nav-links
+  @media only screen and (min-width: $second-break)
+    float: left
+  li
+    padding: $l-s 0
+    border-bottom: 1px solid $c-lightergrey
+    &:first-child
+      padding-left: 0
+    a, a:visited
+      color: $c-darkgrey
+      +single-transition(all, 0.2s, ease-out)
+      display: block
+      &:hover, &:focus
+        color: $c-red 
+    @media only screen and (min-width: $second-break)
+      display: inline-block 
+      border-bottom: none
+      padding: 0 $l-s
+      border-right : 1px solid $c-lightergrey
+
+
+.nav-social
+  margin-top: $l-s
+  li
+    display: inline-block 
+    margin-right: 0.3em
+    font-size: 1.33em
+    &:last-child
+      margin-right: 0 
+    a, a:visited
+      color: $c-darkgrey
+      +single-transition(all, 0.2s, ease-out)
+      display: block
+      &:hover, &:focus
+        color: $c-red  
+        +scale(1.05)        
+  @media only screen and (min-width: $second-break)
+    float: right 
+    margin-left: $l-s  
+    margin-top: -3px
+
+
+.nav-btn
+  border: 1px solid $c-lightergrey
+  +border-radius (3px)
+  padding: 0.65em
+  width: 1.5em
+  position: relative
+  float: right
+  margin-top: 1.5em
+  @media only screen and (min-width: $second-break)
+    display: none
+  .nav-icon
+    width: 100%
+    height: 2px
+    margin-top: 2px
+    display: block
+    background: $c-lightgrey
+    &:first-child
+      margin-top: 0
+#toggle
+  position: absolute
+  width: 2em
+  height: 2em
+  top: 31px
+  right: 7px
+  cursor: pointer
+  +opacity (0)
+  &:checked
+    ~div
+      max-height: 1000px
+      +opacity(1)
+
+
+
