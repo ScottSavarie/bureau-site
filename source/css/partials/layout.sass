@@ -24,8 +24,22 @@
   @extend %l-container
   padding: $l-s
 
+.l-container--wide
+  @extend %l-container
+  padding: $l-l
+
+
+.l-container--list
+  @extend %l-container
+  width: 87% 
+
 .txt-center
   text-align: center
 
 .grey-bg
-  background: rgb(247, 247, 247)
+  background: #f9f9f9
+
+.border-bottom
+  border-bottom: 1px solid $c-lightergrey
+.border-top
+  border-top: 1px solid $c-lightergrey  

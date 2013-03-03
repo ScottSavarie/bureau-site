@@ -1,5 +1,10 @@
+// ----------------------------------------------
+// Intro
+// ----------------------------------------------
+
 #header-cover
   height: 90%
+  min-height: 650px
 
 
 .video-wrapper
@@ -7,19 +12,25 @@
   height: 0
   padding-bottom: 56.25%
   max-height: 45em
-  // padding-top: 30px
   position: relative
   overflow: hidden
 
-.home-video
+.home-video--intro
   position: absolute
   top: 0
   left: 1px
   width: 98%
   height: 98%
 
+.home-video
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%  
+
 .video-mask
-  background: url(../../img/bureau-intro.png) no-repeat
+  background: url(../img/bureau-intro.png) no-repeat
   background-size: cover
   position: absolute
   z-index: 1
@@ -34,6 +45,7 @@
   color: $c-lightgrey
   font-size: 1.5em
   font-weight: 100
+  line-height: 1.4
 
 .arrow-wrap
   text-align: center
@@ -45,6 +57,11 @@
   &:hover, &:focus
     +opacity(0.9)
 
+
+// ----------------------------------------------
+// Specialty Module
+// ----------------------------------------------
+
 .specialty
   margin: 0 auto
   width: 100%
@@ -53,6 +70,8 @@
   margin-top: $l-m
   h2, p
     text-align: left
+  h2
+    margin-top: 2em  
   img
     position: relative
     z-index: 10  
@@ -70,12 +89,12 @@
       margin-right: 0
 
 .dotted-arrow
-  background: url(../../img/dotted-arrow-vert.svg) no-repeat
+  background: url(../img/dotted-arrow-vert.svg) no-repeat
   height: 195px
   width: 14px
   margin: 0 auto
   @media only screen and (min-width: $third-break)
-    background: url(../../img/dotted-arrow.svg) no-repeat
+    background: url(../img/dotted-arrow.svg) no-repeat
     height: 14px
     width: 195px
     position: absolute
@@ -84,5 +103,58 @@
     z-index: 0
   @media only screen and (min-width: $third-break + 200)
     left: 82%
+
+
+// ----------------------------------------------
+// Work Module
+// ----------------------------------------------
+
+.project-thumbnails
+  text-align: center
+  li
+    width: 100%
+    margin-top: 1em
+    +single-transition(all, 0.2s, ease-out)
+    &:hover
+      +opacity(0.8)
+      +box-shadow(0 2px 5px 0 rgba(0,0,0,0.3))
+    img
+      +opacity(0.1)  
+    @media only screen and (min-width: 420px)
+      width: 32%
+      display: inline-block
+      text-align: center
+      margin: 0.25%
+    @media only screen and (min-width: $first-break)
+      margin: 0.36%
+    @media only screen and (min-width: $second-break)
+      margin: 0.44%
+
+    @media only screen and (min-width: $break-1000 + 200)
+      margin: 1%
+      width: 31%  
+
+.more-work
+  font-weight: 900
+
+.palladino
+  background: #383838
+.lu
+  background: #0067ac
+.musagetes
+  background: #70aedc
+.helios
+  background: #ee812f
+.carte
+  background: #da1623
+.bird
+  background: #efefef
+.carrefour
+  background: #26a79d
+.tno
+  background: #80b023
+.fcr
+  background: #9c8b60        
+
 
 
