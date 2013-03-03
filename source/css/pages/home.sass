@@ -1,3 +1,7 @@
+#header-cover
+  height: 90%
+
+
 .video-wrapper
   width: 100%
   height: 0
@@ -10,9 +14,9 @@
 .home-video
   position: absolute
   top: 0
-  left: 0
-  width: 100%
-  height: 100%
+  left: 1px
+  width: 98%
+  height: 98%
 
 .video-mask
   background: url(../../img/bureau-intro.png) no-repeat
@@ -21,3 +25,64 @@
   z-index: 1
   width: 100%
   height: 100%
+
+.home-introtext
+  width: 75%
+  position: relative
+  margin-top: -20%
+  z-index: 10
+  color: $c-lightgrey
+  font-size: 1.5em
+  font-weight: 100
+
+.arrow-wrap
+  text-align: center
+
+.home-arrow
+  +single-transition(all, 0.2s, ease-out)
+  margin-top: 10%
+  display: block
+  &:hover, &:focus
+    +opacity(0.9)
+
+.specialty
+  margin: 0 auto
+  width: 100%
+  text-align: center
+  position: relative
+  margin-top: $l-m
+  h2, p
+    text-align: left
+  img
+    position: relative
+    z-index: 10  
+
+  @media only screen and (min-width: $first-break)
+    width: 80%
+  @media only screen and (min-width: $second-break)
+    width: 70%    
+  @media only screen and (min-width: $third-break)
+    width: 28%
+    display: inline-block
+    vertical-align: top
+    margin-right: 5%     
+    &:last-child
+      margin-right: 0
+
+.dotted-arrow
+  background: url(../../img/dotted-arrow-vert.svg) no-repeat
+  height: 195px
+  width: 14px
+  margin: 0 auto
+  @media only screen and (min-width: $third-break)
+    background: url(../../img/dotted-arrow.svg) no-repeat
+    height: 14px
+    width: 195px
+    position: absolute
+    top: 66px
+    left: 64%
+    z-index: 0
+  @media only screen and (min-width: $third-break + 200)
+    left: 82%
+
+
