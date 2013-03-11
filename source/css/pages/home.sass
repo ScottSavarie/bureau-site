@@ -3,8 +3,10 @@
 // ----------------------------------------------
 
 #header-cover
-  height: 90%
-  min-height: 650px
+  min-height: 350px
+  @media only screen and (min-width: $second-break)
+    min-height: 800px
+    height: 90%
 
 
 .video-wrapper
@@ -38,14 +40,17 @@
   height: 100%
 
 .home-introtext
-  width: 75%
+  width: 100%
   position: relative
   margin-top: -20%
   z-index: 10
-  color: $c-lightgrey
-  font-size: 1.5em
   font-weight: 100
-  line-height: 1.4
+  font-size: $f-m
+  color: $c-lightgrey
+  @media only screen and (min-width: $second-break)
+    font-size: 1.5em
+    line-height: 1.4
+    width: 75%
 
 .arrow-wrap
   text-align: center
@@ -82,7 +87,7 @@
     width: 70%    
   @media only screen and (min-width: $third-break)
     width: 28%
-    display: inline-block
+    +inline-block
     vertical-align: top
     margin-right: 5%     
     &:last-child
@@ -112,27 +117,21 @@
 .project-thumbnails
   text-align: center
   li
-    width: 100%
-    margin-top: 1em
+    width: 30%
+    text-align: center
+    margin: 1%
+    +box-sizing(border-box)
+    display: inline-block
     +single-transition(all, 0.2s, ease-out)
+    img
+      +opacity(0.99)
+      padding: 3%
     &:hover
       +opacity(0.8)
       +box-shadow(0 2px 5px 0 rgba(0,0,0,0.3))
-    img
-      +opacity(0.1)  
-    @media only screen and (min-width: 420px)
-      width: 32%
-      display: inline-block
-      text-align: center
-      margin: 0.25%
-    @media only screen and (min-width: $first-break)
-      margin: 0.36%
-    @media only screen and (min-width: $second-break)
-      margin: 0.44%
-
-    @media only screen and (min-width: $break-1000 + 200)
-      margin: 1%
-      width: 31%  
+    @media only screen and (min-width: $third-break)
+      width: 31%
+      margin: 1% 
 
 .more-work
   font-weight: 900
@@ -156,5 +155,6 @@
 .fcr
   background: #9c8b60        
 
-
+#fb-root
+  display: none
 

@@ -1,0 +1,25 @@
+.blog-teaser
+  width: 85%
+  padding: 7%
+  border: 1px solid $c-lightergrey
+  margin-top: $l-s
+  .blog-date
+    line-height: 2
+    color: $c-lightgrey
+    font-weight: 100
+  p
+    margin-top: $l-s  
+  @media only screen and (min-width: $first-break)
+    width: 39%
+    margin: 1%
+    padding: 4%
+    +inline-block
+    margin-top: 0
+  @media only screen and (min-width: $third-break)
+    width: 42%
+    padding: 2.5%  
+
+.blog-module
+  h1
+    @media only screen and (min-width: $first-break)
+      margin-bottom: $l-s - .5

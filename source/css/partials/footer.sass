@@ -1,0 +1,64 @@
+footer
+  font-weight: 100
+
+address
+  font-style: normal  
+  font-size: 0.75em
+  @media only screen and (min-width: $third-break)
+    font-size: initial
+
+.social-module, .mailing-list
+  +inline-block
+  width: 100%
+  padding-bottom: $l-m
+  margin-bottom: $l-m
+  border-bottom: 1px solid $c-lightergrey
+  @media only screen and (min-width: $third-break)
+    width: auto
+    border-bottom: none
+    padding-bottom: 0
+    margin-bottom: 0
+    border-right: 1px solid $c-lightergrey
+    margin-right: $l-m
+
+.mailing-list
+  @media only screen and (min-width: $third-break)
+    padding-right: $l-m
+    border-right: none
+    @media only screen and (min-width: 1492px)
+      border-right: 1px solid $c-lightergrey
+
+
+.contact-info
+  @media only screen and (min-width: $third-break)
+    margin-top: $l-m
+    padding-top: $l-m
+    border-top: 1px solid $c-lightergrey
+  @media only screen and (min-width: 1492px)
+    float: right  
+    margin-top: 0
+    border-top: none
+    padding-top: 0.75em
+
+.facebook-btn, .twitter-btn, .gplus-btn
+  +inline-block
+  vertical-align: top
+  @media only screen and (min-width: $third-break)
+    margin-right: $l-s
+.twitter-btn
+  width: 138px
+.gplus-btn
+  width: 85px  
+
+
+.mailing-list
+  font-size: 0.75em 
+  @media only screen and (min-width: $third-break)
+    font-size: inherit
+
+#mc_embed_signup
+  .email
+    +inline-block
+    margin: 0 $l-s
+  .button
+    +inline-block 

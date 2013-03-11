@@ -15,8 +15,14 @@
 
 .nav-bg
   +box-shadow(0 0 6px 0 rgba(0,0,0,0.23))
-  position: relative
   z-index: 3
+  position: relative
+  background: rgba(255,255,255,0.96)
+  z-index: 100
+  @media only screen and (min-width: $third-break)
+    position: fixed
+    ~div
+      padding-top: 6em
 
 a.logo, a.logo:visited
   color: $c-red
@@ -87,7 +93,7 @@ a.logo, a.logo:visited
       &:hover, &:focus
         color: $c-red 
     @media only screen and (min-width: $second-break)
-      display: inline-block 
+      +inline-block
       border-bottom: none
       padding: 0 $l-s
       border-right : 1px solid $c-lightergrey
@@ -96,7 +102,7 @@ a.logo, a.logo:visited
 .nav-social
   margin-top: $l-s
   li
-    display: inline-block 
+    +inline-block
     margin-right: 0.3em
     font-size: 1.33em
     &:last-child
@@ -106,8 +112,7 @@ a.logo, a.logo:visited
       +single-transition(all, 0.2s, ease-out)
       display: block
       &:hover, &:focus
-        color: $c-red  
-        +scale(1.05)        
+        color: $c-red        
   @media only screen and (min-width: $second-break)
     float: right 
     margin-left: $l-s  
