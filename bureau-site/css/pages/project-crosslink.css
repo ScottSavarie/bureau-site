@@ -4,7 +4,7 @@ Syntax error: Undefined variable: "$l-s".
 
 1: .project-crosslink
 2:   margin-top: $l-s
-3:   font-size: $f-xl
+3:   font-size: $f-m
 4:   font-weight: 900
 5:   text-align: center
 6:   a
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/project-crosslink.sass\A \A 1: .project-crosslink\A 2:   margin-top: $l-s\A 3:   font-size: $f-xl\A 4:   font-weight: 900\A 5:   text-align: center\A 6:   a\A 7:     +single-transition(all, 0.2s, ease-out)"; }
+  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/project-crosslink.sass\A \A 1: .project-crosslink\A 2:   margin-top: $l-s\A 3:   font-size: $f-m\A 4:   font-weight: 900\A 5:   text-align: center\A 6:   a\A 7:     +single-transition(all, 0.2s, ease-out)"; }

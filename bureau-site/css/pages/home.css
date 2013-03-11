@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$second-break".
-        on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass
+        on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass
 
+2: // Intro
 3: // ----------------------------------------------
 4: 
 5: #header-cover
 6:   min-height: 350px
-7:   padding-top: 6em
-8:   @media only screen and (min-width: $second-break)
-9:     min-height: 800px
-10:     height: 90%
+7:   @media only screen and (min-width: $second-break)
+8:     min-height: 800px
+9:     height: 90%
+10: 
 11: 
-12: 
-13: 
+12: .video-wrapper
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass:8
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass:7
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
@@ -110,4 +110,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$second-break\".\A         on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass\A \A 3: // ----------------------------------------------\A 4: \A 5: #header-cover\A 6:   min-height: 350px\A 7:   padding-top: 6em\A 8:   @media only screen and (min-width: $second-break)\A 9:     min-height: 800px\A 10:     height: 90%\A 11: \A 12: \A 13: "; }
+  content: "Syntax error: Undefined variable: \"$second-break\".\A         on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/home.sass\A \A 2: // Intro\A 3: // ----------------------------------------------\A 4: \A 5: #header-cover\A 6:   min-height: 350px\A 7:   @media only screen and (min-width: $second-break)\A 8:     min-height: 800px\A 9:     height: 90%\A 10: \A 11: \A 12: .video-wrapper"; }
