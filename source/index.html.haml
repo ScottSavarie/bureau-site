@@ -6,31 +6,31 @@ title: "Bureau - Home"
 - @page_class = ''
 #header-cover
   %section.l-module
-    .l-container
+    #video-trigger.l-container
       .video-wrapper
         .video-mask
         <iframe class="home-video--intro" src="http://player.vimeo.com/video/34166985?title=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=1&amp;loop=1"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen><h1>If you can't be found, you don't exist.</h1></iframe>
       %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere.
   .l-module
     .l-container.arrow-wrap
-      %a.home-arrow{:href=>"#"}
+      .home-arrow#home-arrow
         %img{:src=>"img/home-arrow.svg"}
 
-%section.l-module--spaced.grey-bg
+%section.l-module--spaced.grey-bg#specialty
   .l-container
     %header.txt-center
       %h1.header--red We specialize in the business of:
-    %article.specialty.specialty-search
+    %article.specialty.specialty-search#specialty-one
       %img{:src=>"img/home-search.svg"}
       %h2.subhead--grey Getting you found
       %p With extensive web design, web development, responsive design, search sngine optimization, and social marketing services, we will help you get found, drive traffic, and rise you above your competition.
       .dotted-arrow
-    %article.specialty
+    %article.specialty#specialty-two
       %img.specialty-market{:src=>"img/home-market.svg"}
       %h2.subhead--grey Marketing your product
       %p With extensive web design, web development, responsive design, search sngine optimization, and social marketing services, we will help you get found, drive traffic, and rise you above your competition.
       .dotted-arrow
-    %article.specialty
+    %article.specialty#specialty-three
       %img{:src=>"img/home-money.svg"}
       %h2.subhead--grey Making you more money
       %p With extensive web design, web development, responsive design, search sngine optimization, and social marketing services, we will help you get found, drive traffic, and rise you above your competition.
