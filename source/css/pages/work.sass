@@ -1,0 +1,48 @@
+// ----------------------------------------------
+// Work Module
+// ----------------------------------------------
+
+.project-thumbnails
+  text-align: center
+  li
+    width: 30%
+    text-align: center
+    margin: 1%
+    +box-sizing(border-box)
+    display: inline-block
+    +single-transition(all, 0.2s, ease-out)
+    img
+      +opacity(0.99)
+      padding: 3%
+    &:hover
+      +opacity(0.8)
+      +box-shadow(0 2px 5px 0 rgba(0,0,0,0.3))
+    @media only screen and (min-width: $third-break)
+      width: 31%
+      margin: 1% 
+
+.more-work
+  font-weight: 900
+
+.palladino
+  background: #383838
+.lu
+  background: #0067ac
+.musagetes
+  background: #70aedc
+.helios
+  background: #ee812f
+.carte
+  background: #da1623
+.bird
+  background: #efefef
+.carrefour
+  background: #26a79d
+.tno
+  background: #80b023
+.fcr
+  background: #9c8b60        
+
+#fb-root
+  display: none
+
