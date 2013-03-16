@@ -20,6 +20,8 @@ title: "Bureau - Home"
             player = new YT.Player('ytplayer', {
               playerVars: { 
                 'autoplay': 1, 
+                'start': 1,
+                'end': 65,
                 'controls': 0, 
                 'loop': 1, 
                 'enablejsapi': 1, 
@@ -28,15 +30,15 @@ title: "Bureau - Home"
                 'playlist': 'ubtuKcFPGmA'
               },
               videoId: 'ubtuKcFPGmA', 
-              // events: {
-              //   'onPlaybackQualityChange': onPlaybackQualityChange
-              // }
+              events: {
+              'onReady': onPlayerReady,
+              }
               
               });
             }
-          // function onPlaybackQualityChange(event) { 
-          //     event.target.setPlaybackQuality(suggestedQuality:"small")
-          // }
+          function onPlayerReady(event) { 
+              event.target.setPlaybackQuality("small")
+          }
 
 
       %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere.
