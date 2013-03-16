@@ -6,10 +6,39 @@ title: "Bureau - Home"
 - @page_class = ''
 #header-cover
   %section.l-module
-    #video-trigger.l-container
+    #video-trigger.l-container--full
       .video-wrapper
         .video-mask
-        <iframe class="home-video--intro" src="http://player.vimeo.com/video/34166985?title=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=0&amp;loop=1"frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen><h1>If you can't be found, you don't exist.</h1></iframe>
+        #ytplayer.home-video--intro
+        :javascript
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('ytplayer', {
+              playerVars: { 
+                'autoplay': 1, 
+                'controls': 0, 
+                'loop': 1, 
+                'enablejsapi': 1, 
+                'autohide': 1,
+                'modestbranding': 1,
+                'playlist': 'ubtuKcFPGmA'
+              },
+              videoId: 'ubtuKcFPGmA', 
+              // events: {
+              //   'onPlaybackQualityChange': onPlaybackQualityChange
+              // }
+              
+              });
+            }
+          // function onPlaybackQualityChange(event) { 
+          //     event.target.setPlaybackQuality(suggestedQuality:"small")
+          // }
+
+
       %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere.
   .l-module
     .l-container.arrow-wrap
@@ -42,7 +71,8 @@ title: "Bureau - Home"
 
 %section.l-module--wide
   .l-container--list
-    %h1.header--grey Our Work
+    %a{:href=>"#"}
+      %h1.header--grey Our work
     %ul.project-thumbnails
       %li.palladino
         %a{:href=>"#"}
