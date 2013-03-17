@@ -11,11 +11,10 @@
     +box-sizing(border-box)
     display: inline-block
     +single-transition(all, 0.2s, ease-out)
-    img
-      +opacity(0.99)
+    a
+      display: block
       padding: 3%
-    &:hover
-      +opacity(0.8)
+    &:hover, &:focus
       +box-shadow(0 2px 5px 0 rgba(0,0,0,0.3))
     @media only screen and (min-width: $third-break)
       width: 31%

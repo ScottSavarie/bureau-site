@@ -1,0 +1,36 @@
+.profile-img
+  width: 100%
+
+.people
+  +inline-block
+  width: 100%
+  box-sizing: border-box
+  padding: $l-s
+  text-overflow: ellipsis
+  overflow: hidden
+  .twitter-follow-button
+    margin-top: 0.2em
+  img
+    float: left
+    margin-right: $l-s
+    width: 35%
+  h2, p, a
+    font-size: $f-s
+    margin-bottom: 0.4em
+  a
+    display: block    
+
+  @media only screen and (min-width: $first-break)
+    width: 49%
+    float: left
+    img
+      float: none
+      width: 100%
+      margin-right: 0
+      margin-bottom: $l-s
+
+  @media only screen and (min-width: $second-break)
+    width: 32%
+
+  @media only screen and (min-width: $third-break)
+    width: 14.2% 

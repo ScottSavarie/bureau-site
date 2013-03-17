@@ -34,8 +34,10 @@
   width: 87% 
 .l-container--full
   @extend %l-container
-  width: 90%
-  max-width: 100%
+  width: 100%
+  max-width: 85%
+  @media only screen and (min-width: $second-break)
+    max-width: 90%
 
 .grey-bg
   background: #f9f9f9
@@ -44,3 +46,19 @@
   border-bottom: 1px solid $c-lightergrey
 .border-top
   border-top: 1px solid $c-lightergrey  
+
+.two-thirds
+  width: 100%
+  @media only screen and (min-width: $second-break)
+    width: 60%
+
+.one-third
+  width: 100%
+  @media only screen and (min-width: $second-break)
+    width: 30%  
+
+.fl
+  float: left
+
+.fr
+  float: right
