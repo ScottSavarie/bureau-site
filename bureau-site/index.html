@@ -91,7 +91,6 @@
                 player = new YT.Player('ytplayer', {
                   playerVars: { 
                     'autoplay': 1, 
-                    'start': 1,
                     'end': 65,
                     'controls': 0, 
                     'loop': 1, 
@@ -150,7 +149,10 @@
     <section class='l-module--spaced border-bottom'>
       <div class='l-container'>
         <div class='video-wrapper'>
-          <iframe class="home-video" src="http://www.youtube.com/embed/1sYNgnUaAyg?title=0&amp;modestbranding=1&amp;showinfo=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=0&amp;autohide=1&amp;controls=0&amp;start=2&amp;loop=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe id="videotarget" class="home-video" src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div id='videotrigger'>
+            <img src='img/video-poster.jpg'>
+          </div>
         </div>
       </div>
     </section>

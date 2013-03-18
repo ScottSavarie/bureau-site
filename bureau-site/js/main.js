@@ -65,11 +65,14 @@ $(document).ready(function() {
     else {
         //Do Something Else
     }
-
-
-
     
 });
 
+
+$("#videotrigger").click(function () { 
+    $("#videotarget").attr("src", "http://www.youtube.com/embed/1sYNgnUaAyg?title=0&amp;modestbranding=1&amp;showinfo=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=1&amp;autohide=1&amp;controls=0&amp;start=2&amp;loop=1");
+    $(this).hide(0);
+
+});
 
 
