@@ -18,7 +18,7 @@
   margin: 0 auto
   display: block
   overflow: hidden
-  
+
 
 .l-container--thin
   @extend %l-container
@@ -28,6 +28,9 @@
   @extend %l-container
   padding: $l-l
 
+.l-container--narrow
+  @extend .l-container--wide
+  max-width: 800px  
 
 .l-container--list
   @extend %l-container

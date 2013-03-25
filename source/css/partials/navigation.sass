@@ -12,6 +12,14 @@
   .page-blog__link
     color: $c-red !important    
 
+// .slide-up
+//   margin-top: -7em
+
+// .slide-down
+//   margin-top: 0  
+
+
+
 
 .nav-bg
   +box-shadow(0 0 6px 0 rgba(0,0,0,0.23))
@@ -19,6 +27,7 @@
   position: relative
   background: rgba(255,255,255,0.96)
   z-index: 100
+  +single-transition(opacity, 0.2s, ease)
   @media only screen and (min-width: $third-break)
     position: fixed
 

@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$l-s".
-        on line 17 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass
+        on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass
 
-12:   overflow: hidden
-13: 
-14: .work-detail-intro
-15:   padding: 7.5%
-16:   h2
-17:     padding-bottom: $l-s
-18: 
-19: .work-detail-image
-20:   background: white
-21:   img
-22:     display: block
+4: 
+5: .project-intro
+6:   h1, h2
+7:     text-align: left
+8:   h2
+9:     padding-bottom: $l-s
+10:   h1
+11:     padding-bottom: $l-s / 3
+12:     @media only screen and (min-width: $third-break)
+13:       font-size: $f-xxl
+14: 
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass:17
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass:9
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -116,4 +116,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 17 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass\A \A 12:   overflow: hidden\A 13: \A 14: .work-detail-intro\A 15:   padding: 7.5%\A 16:   h2\A 17:     padding-bottom: $l-s\A 18: \A 19: .work-detail-image\A 20:   background: white\A 21:   img\A 22:     display: block"; }
+  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/work-detail.sass\A \A 4: \A 5: .project-intro\A 6:   h1, h2\A 7:     text-align: left\A 8:   h2\A 9:     padding-bottom: $l-s\A 10:   h1\A 11:     padding-bottom: $l-s / 3\A 12:     @media only screen and (min-width: $third-break)\A 13:       font-size: $f-xxl\A 14: "; }

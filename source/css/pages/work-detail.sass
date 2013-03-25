@@ -2,54 +2,25 @@
 // Work Detail module
 // ----------------------------------------------
 
-
-
-.l-container--scroll
-  width: 100%
-  max-width: 1280px
-  margin: 0 auto
-  display: block
-  overflow: hidden
-
-.work-detail-intro
-  padding: 7.5%
+.project-intro
+  h1, h2
+    text-align: left
   h2
     padding-bottom: $l-s
+  h1
+    padding-bottom: $l-s / 3
+    @media only screen and (min-width: $third-break)
+      font-size: $f-xxl
 
-.work-detail-image
-  background: white
-  img
-    display: block
-
-
-
-@media only screen and (min-width: $third-break)
-  .l-container--scroll
-    overflow-x: scroll
-    overflow-y: hidden
-    white-space: nowrap
-    width: 100%
-    max-width: 100%
-    display: auto
-
-  .work-detail-intro
-    display: inline-block
-    width: 70%
-    vertical-align: top
-    padding-left: 5%
-    padding-right: 5%
-    padding-top: 16%
-    box-sizing: border-box
-    white-space: normal
-    h1, h2
-      text-align: left
+.txt-emph
+  padding-top: 25%
+  padding-bottom: 25%
 
 
+.image--fullwidth
+  width: 100%
+  display: block
 
-  .work-detail-image
-    display: inline-block
-    vertical-align: top
-    box-sizing: border-box
-    img
-      float: left
-      vertical-align: top
+.image--halfwidth
+  width: 50%
+  float: left
