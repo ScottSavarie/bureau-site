@@ -1,0 +1,46 @@
+%section.l-module--wide#contact-wrap
+  .l-container--narrow.contact-bg
+    %h1.header--grey.txt-center Get in touch
+    %form{ :method => "post", :action => "/contact-form-handler.php", :id => "contact-form"}
+      %fieldset
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "your full name"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "email address"}
+        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "phone number"}
+        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "your company"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "tell us more..."}
+        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+    .contact-details-container    
+      .contact-map
+        .contact-pin-wrap
+          .contact-pin
+            %img.bureau-office{:src => "/img/bureau-office.jpg"}
+            %ul.bureau-address
+              %li.bureau-title Bureau
+              %li.bureau-address-list 170 Elgin St., 
+              %li.bureau-address-list Sudbury Ontario P3E 3N5
+        %img.map-image{:src => "/img/bureau-map.jpg"}
+      %ul.contact-list
+        %li
+          %a{:href =>"mailto:hello@bureau.ca"}
+            %span hello@bureau.ca
+        %li T 705 586 3189
+        %li TF 877 586 3189
+        %li F 705 586 3197
+    %span.close-trigger#close-trigger
+      ×
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

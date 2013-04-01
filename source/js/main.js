@@ -1,4 +1,42 @@
 
+// $(document).ready(function() {
+//     $("#contact-wrap").addClass("contact-initial-hidden");
+// });
+
+// $(".page-contact__link").click(function(){
+//     $("#contact-wrap").toggleClass("contact-initial-hidden");
+//     $('#contact-wrap').toggleClass("contact-visible");
+// });
+
+// $("#close-trigger").click(function(){
+//     $('#contact-wrap').removeClass("contact-visible");
+//     $('#contact-wrap').addClass("contact-initial-hidden");
+// });
+
+
+/* =Contact Slide Down
+============================================================================== */
+
+$(document).ready(function() {
+    $("#contact-wrap").hide(0);
+});
+
+$(".page-contact__link").click(function(){
+    $("#contact-wrap").slideToggle(200);
+});
+
+$("#close-trigger").click(function(){
+    $('#contact-wrap').slideUp(200);
+});
+
+
+$(document).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC
+        $("#contact-wrap").slideUp(200);
+    }
+});
+
+
 
 /* =Home fade ins
 ============================================================================== */

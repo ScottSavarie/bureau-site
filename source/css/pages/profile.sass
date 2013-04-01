@@ -41,10 +41,12 @@
   background: url(../img/profile-1.jpg) no-repeat
   background-size: contain 
   background-position-x: center
-  background-position-y: 90px
+  background-position-y: 5em
   background-attachment: fixed
   padding-bottom: 39%
   display: block
+  @media only screen and (min-width: $third-break)
+    background-position-y: top
 
 .profile-header
   padding-top: 0.5em

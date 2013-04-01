@@ -20,7 +20,7 @@
         %li
           <a class="page-blog__link" href="#">Blog</a>  
         %li
-          <a class="page-contact__link" href="/contact.html">Contact</a>  
+          <a class="page-contact__link" >Contact</a>  
       %ul.nav-social.ss-icon
         %li
           <a href="#">twitter</a>
@@ -36,21 +36,8 @@
           <a href="#">pinterest</a>        
         %li
           <a href="#">instagram</a> 
+  = partial "contact"
 .nav-fixed-fix  
-
-%section.l-module.contact-wrap
-  .l-container--narrow
-    %form{ :method => "post", :action => "contact-form-handler.php", :id => "contact-form"}
-      %fieldset
-        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "your full name"}
-        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "email address"}
-        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "phone number"}
-        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "your company"}
-        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "tell us more..."}
-        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
-
-
-
 
 
 
