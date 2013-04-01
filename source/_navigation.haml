@@ -3,7 +3,7 @@
   .l-container--full.nav-wrap
     %div.nav-bar
       <a class ="language" href ="#">Français</a>
-      <a class="logo" href="index.html"><h1>Bureau</h1></a>
+      <a class="logo" href="/index.html"><h1>Bureau</h1></a>
       %div.nav-btn
         %span.nav-icon
         %span.nav-icon
@@ -12,15 +12,15 @@
     %div.nav-container
       %ul.nav-links
         %li
-          <a class="page-work__link" href="work.html">Work</a>
+          <a class="page-work__link" href="/work.html">Work</a>
         %li
-          <a class="page-profile__link" href="profile.html">Profile</a>
+          <a class="page-profile__link" href="/profile.html">Profile</a>
         %li
-          <a class="page-services__link" href="services.html">Services</a>      
+          <a class="page-services__link" href="/services.html">Services</a>      
         %li
           <a class="page-blog__link" href="#">Blog</a>  
         %li
-          <a class="page-contact__link" href="contact.html">Contact</a>  
+          <a class="page-contact__link" href="/contact.html">Contact</a>  
       %ul.nav-social.ss-icon
         %li
           <a href="#">twitter</a>
@@ -36,4 +36,30 @@
           <a href="#">pinterest</a>        
         %li
           <a href="#">instagram</a> 
-.nav-fixed-fix          
+.nav-fixed-fix  
+
+%section.l-module.contact-wrap
+  .l-container--narrow
+    %form{ :method => "post", :action => "contact-form-handler.php", :id => "contact-form"}
+      %fieldset
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "your full name"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "email address"}
+        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "phone number"}
+        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "your company"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "tell us more..."}
+        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

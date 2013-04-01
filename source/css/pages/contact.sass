@@ -1,0 +1,35 @@
+// Contact Form
+
+#contact-form
+  text-align: center
+  fieldset
+    background: rgb(241, 241, 241)
+    border: none
+    @media only screen and (min-width: $second-break)
+      padding: $l-m $l-s
+
+    
+    .input-field--message
+      width: 100%
+      padding: $l-s /1.5 $l-s /1.5 3em $l-s /1.5 
+      margin: $l-s /2 0
+      padding-bottom: 6em
+      @media only screen and (min-width: $second-break)
+        padding: $l-s $l-s 6em $l-s
+        margin: $l-s 0
+        width: 95%
+    .input-field
+      display: inline-block
+      width: 100%
+      padding: $l-s /1.5
+      margin: $l-s /2 0
+      @media only screen and (min-width: $second-break)
+        padding: $l-s
+        margin: $l-s $l-s
+        width: 46%
+
+    .btn-primary
+      width: 100%      
+      @media only screen and (min-width: $second-break)
+        width: 95%
+        margin: $l-s 0
