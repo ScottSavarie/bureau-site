@@ -1,0 +1,36 @@
+---
+title: "Bureau - Worksheet"
+
+---
+
+- @body_class = 'page-worksheet'
+- @page_class = ''
+
+%section.l-module--wide 
+  .l-container--narrow
+    %h1.header--grey.txt-center Worksheet
+    %h2.intro-subhead.txt-center.worksheet-intro 
+      Fill out a project worksheet to speed up the briefing process, or just 
+      %a{:href=>"mailto:hello@bureau.ca"}
+        %span contact us directly
+
+    %form{ :method => "post", :action => "/worksheet-form-handler.php", :id => "worksheet-form"}
+      %fieldset
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "your full name"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "email address"}
+        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "phone number"}
+        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "your company"}
+        %input{ :type => "text", :class => "input-field", :name => "project", :placeholder => "what type of project?"}
+        %input{ :type => "text", :class => "input-field", :name => "timeframe", :placeholder => "what's your timeframe?"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "tell us more..."}
+        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+        .working-with.contact-bg
+          %span#working-with-close 
+            +
+          %span#working-with-trigger 
+            Working with Bureau
+          %ul.working-with-list#working-with-list
+            %li.txt-bold Great projects take time.
+            %li.txt-bold Great teams require great pay.  
+            %li.list-spaced We're not a template shop. We're a fully custom design and code agency that delivers world class marketing and creates excellent results.
+            %li Sound good? Good.

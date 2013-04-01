@@ -1,0 +1,39 @@
+.worksheet-intro
+  max-width: 650px
+  margin: 0 auto
+
+#working-with-close, 
+#working-with-trigger
+  font-weight: 900
+  color: $c-red
+  font-size: $f-m
+  cursor: pointer
+  display: block
+  +single-transition(all, 0.2s, ease-out)
+  &:hover, &:focus
+    color: lighten($c-red, 10%)
+
+#working-with-close
+  float: left
+  margin-right: $l-s
+
+.working-with
+  text-align: left
+  width: 95%
+  padding: 1em 
+  margin: $l-s /2 0
+  @media only screen and (min-width: $second-break)
+    width: 61%  
+    margin: $l-s $l-s $l-s 1.5em
+
+.working-with-list
+  margin-left: 1.5em
+  margin-top: 1em
+  line-height: $f-lineheight
+
+.list-spaced
+  margin-top: $l-s
+  margin-bottom: $l-s
+
+.rotated
+  +rotate(45deg)  

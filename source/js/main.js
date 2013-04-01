@@ -38,6 +38,21 @@ $(document).on( 'keydown', function ( e ) {
 
 
 
+/* =Contact working with
+============================================================================== */
+
+$(document).ready(function() {
+    $("#working-with-list").hide(0);
+});
+
+
+$("#working-with-trigger, #working-with-close").click(function(){
+    $('#working-with-list').slideToggle(200);
+    $('#working-with-close').toggleClass("rotated");
+});
+
+
+
 /* =Home fade ins
 ============================================================================== */
 $(document).ready(function() {
