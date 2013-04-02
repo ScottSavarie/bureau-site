@@ -4,6 +4,7 @@ title: "Bureau - Home"
 
 - @body_class = 'page-home'
 - @page_class = ''
+
 #header-cover
   %section.l-module
     #video-trigger.l-container--full
@@ -36,6 +37,7 @@ title: "Bureau - Home"
               });
             }
           function onPlayerReady(event) { 
+            $("#video-trigger, #home-arrow").removeClass("hidden");
               event.target.setPlaybackQuality("small");
           }
       %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere.
