@@ -4,9 +4,7 @@ $myemail = 'scottsavarie@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email'])||
    empty($_POST['tel']) || 
-   empty($_POST['text']) ||
-   empty($_POST['project']) || 
-   empty($_POST['timeframe']) || 
+   empty($_POST['text']) || 
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
@@ -15,8 +13,6 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $tel = $_POST['tel']; 
 $text = $_POST['text']; 
-$timeframe = $_POST['timeframe'];
-$project = $_POST['project']; 
 $message = $_POST['message']; 
 
 if (!preg_match(
@@ -29,9 +25,9 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Worksheet form submission: $name";
-	$email_body = "You have received a new worksheet. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Telephone: $tel \n Company: $text \n Timeframe: $timeframe \n Project: $project \n Message: \n $message"; 
+	$email_subject = "Contact form submission: $name";
+	$email_body = "You have received a new message. ".
+	" Here are the details:\n Name: $name \n Email: $email_address \n Telephone: \n $tel Company: \n $text Message: \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";

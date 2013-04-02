@@ -15,9 +15,9 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $tel = $_POST['tel']; 
 $text = $_POST['text']; 
-$timeframe = $_POST['timeframe'];
+$message = $_POST['message'];
 $project = $_POST['project']; 
-$message = $_POST['message']; 
+$timeframe = $_POST['timeframe']; 
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
@@ -29,9 +29,9 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Worksheet form submission: $name";
+	$email_subject = "Contact form submission: $name";
 	$email_body = "You have received a new worksheet. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Telephone: $tel \n Company: $text \n Timeframe: $timeframe \n Project: $project \n Message: \n $message"; 
+	" Here are the details:\n Name: $name \n Email: $email_address \n Telephone: \n $tel Company: \n $text Project: \n $project Timeframe: \n $timeframe Message: \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
 	$headers .= "Reply-To: $email_address";

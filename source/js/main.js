@@ -1,25 +1,7 @@
 
-// $(document).ready(function() {
-//     $("#contact-wrap").addClass("contact-initial-hidden");
-// });
-
-// $(".page-contact__link").click(function(){
-//     $("#contact-wrap").toggleClass("contact-initial-hidden");
-//     $('#contact-wrap').toggleClass("contact-visible");
-// });
-
-// $("#close-trigger").click(function(){
-//     $('#contact-wrap').removeClass("contact-visible");
-//     $('#contact-wrap').addClass("contact-initial-hidden");
-// });
-
 
 /* =Contact Slide Down
 ============================================================================== */
-
-$(document).ready(function() {
-    $("#contact-wrap").hide(0);
-});
 
 $(".page-contact__link").click(function(){
     $("#contact-wrap").slideToggle(200);
@@ -59,19 +41,6 @@ $(document).ready(function() {
     $("#video-trigger, #home-arrow").hide(0);
     $("#video-trigger, #home-arrow").delay(500).fadeIn('slow');
 });
-
-
-
-// $(document).ready(function() {
-//     var width = $(window).width();
-//     if (width >= 767) {
-//         $("#home-nav").hide();
-//         $("#home-nav").delay(200).slideDown('fast');
-//     }
-//     else {
-//         //Do Something Else
-//     }
-// });
 
 
 
@@ -142,37 +111,38 @@ $("#videotrigger").click(function () {
 ============================================================================== */
 
 
-        var lastScrollTop = 0;
-        $(window).scroll(function(event){
-           var st = $(this).scrollTop();
-           if (st > lastScrollTop){
-                    $("#nav-fixed").removeClass("visible");
-                    $("#nav-fixed").addClass("hidden"); 
-           } 
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+            $("#nav-fixed").removeClass("visible");
+            $("#nav-fixed").addClass("hidden"); 
+   } 
 
-           else {
-                    $("#nav-fixed").removeClass("hidden");  
-                    $("#nav-fixed").addClass("visible");
-           }
-           lastScrollTop = st;
-        });
+   else {
+            $("#nav-fixed").removeClass("hidden");  
+            $("#nav-fixed").addClass("visible");
+   }
+   lastScrollTop = st;
+});
 
 
 
-        $(window).scroll(function(event){
-           var st = $(this).scrollTop();
-           if (st <= 10){
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st <= 10){
 
-                    $("#nav-fixed").removeClass("hidden");  
-                    $("#nav-fixed").addClass("visible");
+            $("#nav-fixed").removeClass("hidden");  
+            $("#nav-fixed").addClass("visible");
 
-           }
+   }
 
-           else{
+   else{
 
-           }
+   }
 
-       });
+});
+
 
 
 

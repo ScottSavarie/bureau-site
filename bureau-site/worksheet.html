@@ -9,14 +9,14 @@
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Bureau - Musagetes</title>
+    <title>Bureau - Worksheet</title>
     <meta content='' name='description'>
     <meta content='width=device-width' name='viewport'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link href='css/style.css' rel='stylesheet'>
     <link href='webfonts/ss-social.css' rel='stylesheet'>
   </head>
-  <body class='page-work-detail'>
+  <body class='page-worksheet'>
     <nav class='nav-bg l-module' id='nav-fixed'>
   <span class='red-bar'></span>
   <div class='l-container--full nav-wrap'>
@@ -118,51 +118,43 @@
 </section>
 </nav>
 <div class='nav-fixed-fix'></div>
-    <section>
-      <div class='l-module musagetes'>
-        <div class='l-container project-intro'>
-          <header class='txt-emph two-thirds'>
-            <h1 class='header--white'>Musagetes</h1>
-            <h2 class='intro-subhead txt-white'>We created everything from the posters, hand outs, signage and website for the event. We developed a circle theme that envelops everything the Sudbury community stands for. This circle theme was taken further and applied to other events as well.</h2>
-            <i class='txt-white'>branding / web design / poster design</i>
-          </header>
+    <section class='l-module--wide'>
+  <div class='l-container--narrow'>
+    <h1 class='header--grey txt-center'>Worksheet</h1>
+    <h2 class='intro-subhead txt-center worksheet-intro'>
+      Fill out a project worksheet to speed up the briefing process, or just
+      <a href='mailto:hello@bureau.ca'>
+        <span>contact us directly</span>
+      </a>
+    </h2>
+    <form action='worksheet-form-handler.php' id='worksheet-form' method='post'>
+      <fieldset>
+        <input class='input-field' name='name' placeholder='your full name' type='name'>
+        <input class='input-field' name='email' placeholder='email address' type='email'>
+        <input class='input-field' name='tel' placeholder='phone number' type='tel'>
+        <input class='input-field' name='text' placeholder='your company' type='text'>
+        <input class='input-field' name='project' placeholder='what type of project?' type='text'>
+        <input class='input-field' name='timeframe' placeholder="what's your timeframe?" type='text'>
+        <textarea class='input-field--message' name='message' placeholder='tell us more...'></textarea>
+        <input class='btn-primary' id='submit' name='submit' type='submit' value='Submit'>
+        <div class='working-with contact-bg'>
+          <span id='working-with-close'>
+            +
+          </span>
+          <span id='working-with-trigger'>
+            Working with Bureau
+          </span>
+          <ul class='working-with-list' id='working-with-list'>
+            <li class='txt-bold'>Great projects take time.</li>
+            <li class='txt-bold'>Great teams require great pay.</li>
+            <li class='list-spaced'>We're not a template shop. We're a fully custom design and code agency that delivers world class marketing and creates excellent results.</li>
+            <li>Sound good? Good.</li>
+          </ul>
         </div>
-      </div>
-      <div class='l-module'>
-        <img class='image--fullwidth' src='img/portfolio/musagetes3.jpg'>
-      </div>
-      <div class='l-module--spaced'>
-        <div class='l-container--narrow'>
-          <h2 class='header--grey'>How we brought a community of artists, designers, activists together</h2>
-          <p class='project-paragraph'>At the Sudbury Café (September 14 – 18, 2011), Musagetes gathered more than 40 artists, designers, activists, architects, intellectuals, researchers, students, residents and community groups from around the world to learn from Sudbury and contribute to the discussions already taking place here.</p>
-          <p class='project-paragraph'>At the Sudbury Café (September 14 – 18, 2011), Musagetes gathered more than 40 artists, designers, activists, architects, intellectuals, researchers, students, residents and community groups from around the world to learn from Sudbury and contribute to the discussions already taking place here.</p>
-        </div>
-        <div class='l-container--wide'>
-          <img src='img/portfolio/appuous-4.jpg'>
-        </div>
-        <div class='l-container--narrow'>
-          <p class='project-paragraph'>At the Sudbury Café (September 14 – 18, 2011), Musagetes gathered more than 40 artists, designers, activists, architects, intellectuals, researchers, students, residents and community groups from around the world to learn from Sudbury and contribute to the discussions already taking place here.</p>
-          <p class='project-paragraph'>At the Sudbury Café (September 14 – 18, 2011), Musagetes gathered more than 40 artists, designers, activists, architects, intellectuals, researchers, students, residents and community groups from around the world to learn from Sudbury and contribute to the discussions already taking place here.</p>
-        </div>
-      </div>
-      <div class='l-module musagetes'>
-        <div class='l-container txt-emph txt-center'>
-          <h1 class='header--white'>“Bureau provided us with the perfect combination of creative design, professional client relations, and prompt delivery.”</h1>
-          <i class='txt-white'>–Shawn Van Sluys, Executive Director, Musagetes Foundation</i>
-        </div>
-      </div>
-      <img class='image--halfwidth' src='img/portfolio/musagetes2.jpg'>
-      <img class='image--halfwidth' src='img/portfolio/musagetes1.jpg'>
-      <div class='l-module--spaced'>
-        <div class='l-container--narrow'>
-          <h2 class='header--grey'>The value this brought not only to our client, but our community.</h2>
-          <p class='project-paragraph'>Musagetes is a foundation based in Guelph, Ontario which seeks to transform contemporary life by working with artists, cultural mediators, public intellectuals and other partners to develop new approaches to building community and culture.</p>
-        </div>
-      </div>
-    </section>
-    <section class='project-crosslink'>
-      <a class=" border-top" href="worksheet.html">Get in touch to start your project.</a>
-    </section>
+      </fieldset>
+    </form>
+  </div>
+</section>
     <footer class='l-module--wide border-top'>
       <div class='l-container'>
         <div class='social-module'>
