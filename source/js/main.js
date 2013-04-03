@@ -37,13 +37,13 @@ $("#working-with-trigger, #working-with-close").click(function(){
 
 /* =Home fade ins
 ============================================================================== */
-    // $("#video-trigger, #home-arrow").delay(500).fadeIn('slow');
+
 $(document).ready(function() {
     $("#video-trigger, #home-arrow").addClass("hidden");
 
-      // setTimeout(function(){
-      //       $("#video-trigger, #home-arrow").removeClass("hidden");
-      // },5000);
+      setTimeout(function(){
+            $("#video-trigger, #home-arrow").removeClass("hidden");
+      },100);
 
 });
 

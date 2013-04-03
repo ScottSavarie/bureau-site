@@ -10,36 +10,38 @@ title: "Bureau - Home"
     #video-trigger.l-container--full
       .video-wrapper
         .video-mask
-        #ytplayer.home-video--intro
-        :javascript
-          var tag = document.createElement('script');
-          tag.src = "https://www.youtube.com/player_api";
-          var firstScriptTag = document.getElementsByTagName('script')[0];
-          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-          var player;
-          function onYouTubeIframeAPIReady() {
-            player = new YT.Player('ytplayer', {
-              playerVars: { 
-                'autoplay': 1, 
-                'end': 65,
-                'controls': 0, 
-                'loop': 1, 
-                'enablejsapi': 1, 
-                'autohide': 1,
-                'modestbranding': 1,
-                'playlist': 'ubtuKcFPGmA'
-              },
-              videoId: 'ubtuKcFPGmA', 
-              events: {
-              'onReady': onPlayerReady,
-              }
+        / #ytplayer.home-video--intro
+
+        <video class="home-video--intro" autoplay="autoplay" poster="img/video-poster2.jpg" loop="true"><source src="videos/Bureau_homepage.mp4" type="video/mp4" /><source src="videos/Bureau_homepage.ogg" type="video/ogg"/><source src="videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="m/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="m/player.swf"><!--<![endif]--><img src="m/video.jpg" width="854" height="480" alt="Video"></object></video>
+        // :javascript
+        //   var tag = document.createElement('script');
+        //   tag.src = "https://www.youtube.com/player_api";
+        //   var firstScriptTag = document.getElementsByTagName('script')[0];
+        //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        //   var player;
+        //   function onYouTubeIframeAPIReady() {
+        //     player = new YT.Player('ytplayer', {
+        //       playerVars: { 
+        //         'autoplay': 1, 
+        //         'end': 65,
+        //         'controls': 0, 
+        //         'loop': 1, 
+        //         'enablejsapi': 1, 
+        //         'autohide': 1,
+        //         'modestbranding': 1,
+        //         'playlist': 'ubtuKcFPGmA'
+        //       },
+        //       videoId: 'ubtuKcFPGmA', 
+        //       events: {
+        //       'onReady': onPlayerReady,
+        //       }
               
-              });
-            }
-          function onPlayerReady(event) { 
-            $("#video-trigger, #home-arrow").removeClass("hidden");
-              event.target.setPlaybackQuality("small");
-          }
+        //       });
+        //     }
+        //   function onPlayerReady(event) { 
+        //     $("#video-trigger, #home-arrow").removeClass("hidden");
+        //       event.target.setPlaybackQuality("small");
+        //   }
       %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere.
   .l-module
     .l-container.arrow-wrap

@@ -18,62 +18,64 @@
   </head>
   <body class='page-home'>
     <nav class='nav-bg l-module' id='nav-fixed'>
-  <span class='red-bar'></span>
-  <div class='l-container--full nav-wrap'>
-    <div class='nav-bar'>
-      <a class ="language" href ="#">Français</a>
-      <a class="logo" href="index.html"><h1>Bureau</h1></a>
-      <div class='nav-btn'>
-        <span class='nav-icon'></span>
-        <span class='nav-icon'></span>
-        <span class='nav-icon'></span>
+      <span class='red-bar'></span>
+      <div class='l-container--full nav-wrap'>
+        <div class='nav-bar'>
+          <a class ="language" href ="#">Français</a>
+          <a class="logo" href="index.html"><h1>Bureau</h1></a>
+          <div class='nav-btn'>
+            <span class='nav-icon'></span>
+            <span class='nav-icon'></span>
+            <span class='nav-icon'></span>
+          </div>
+        </div>
+        <input type="checkbox" id="toggle">
+        <div class='nav-container'>
+          <ul class='nav-links'>
+            <li>
+              <a class="page-work__link" href="work.html">Work</a>
+            </li>
+            <li>
+              <a class="page-profile__link" href="profile.html">Profile</a>
+            </li>
+            <li>
+              <a class="page-services__link" href="services.html">Services</a>
+            </li>
+            <li>
+              <a class="page-blog__link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="page-contact__link" href="#contact-wrap" >Contact</a>
+            </li>
+          </ul>
+          <ul class='nav-social ss-icon'>
+            <li>
+              <a href="#">twitter</a>
+            </li>
+            <li>
+              <a href="#">facebook</a>
+            </li>
+            <li>
+              <a href="#">google+</a>
+            </li>
+            <li>
+              <a href="#">linkedin</a>
+            </li>
+            <li>
+              <a href="#">youtube</a>
+            </li>
+            <li>
+              <a href="#">pinterest</a>
+            </li>
+            <li>
+              <a href="#">instagram</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <input type="checkbox" id="toggle">
-    <div class='nav-container'>
-      <ul class='nav-links'>
-        <li>
-          <a class="page-work__link" href="work.html">Work</a>
-        </li>
-        <li>
-          <a class="page-profile__link" href="profile.html">Profile</a>
-        </li>
-        <li>
-          <a class="page-services__link" href="services.html">Services</a>
-        </li>
-        <li>
-          <a class="page-blog__link" href="#">Blog</a>
-        </li>
-        <li>
-          <a class="page-contact__link" >Contact</a>
-        </li>
-      </ul>
-      <ul class='nav-social ss-icon'>
-        <li>
-          <a href="#">twitter</a>
-        </li>
-        <li>
-          <a href="#">facebook</a>
-        </li>
-        <li>
-          <a href="#">google+</a>
-        </li>
-        <li>
-          <a href="#">linkedin</a>
-        </li>
-        <li>
-          <a href="#">youtube</a>
-        </li>
-        <li>
-          <a href="#">pinterest</a>
-        </li>
-        <li>
-          <a href="#">instagram</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <section class='l-module--wide' id='contact-wrap'>
+    </nav>
+    <div class='nav-fixed-fix'></div>
+    <section class='l-module--spaced' id='contact-wrap'>
   <div class='l-container--narrow contact-bg'>
     <h1 class='header--grey txt-center'>Get in touch</h1>
     <form action='contact-form-handler.php' id='contact-form' method='post'>
@@ -116,8 +118,6 @@
     </span>
   </div>
 </section>
-</nav>
-<div class='nav-fixed-fix'></div>
     <div id='header-cover'>
       <section class='l-module'>
         <div class='l-container--full' id='video-trigger'>
@@ -150,6 +150,7 @@
                   });
                 }
               function onPlayerReady(event) { 
+                $("#video-trigger, #home-arrow").removeClass("hidden");
                   event.target.setPlaybackQuality("small");
               }
             </script>
