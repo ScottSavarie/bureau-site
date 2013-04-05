@@ -38,14 +38,14 @@ $("#working-with-trigger, #working-with-close").click(function(){
 /* =Home fade ins
 ============================================================================== */
 
-$(document).ready(function() {
-    $("#video-trigger, #home-arrow").addClass("hidden");
+// $(document).ready(function() {
+//     $("#video-trigger, #home-arrow").addClass("hidden");
 
-      setTimeout(function(){
-            $("#video-trigger, #home-arrow").removeClass("hidden");
-      },100);
+//       setTimeout(function(){
+//             $("#video-trigger, #home-arrow").removeClass("hidden");
+//       },900);
 
-});
+// });
 
 
 

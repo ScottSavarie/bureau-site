@@ -26,7 +26,8 @@
 
 .l-container--wide
   @extend %l-container
-  padding: $l-l
+  @media only screen and (min-width: $second-break)
+    padding: $l-l
 
 .l-container--narrow
   @extend .l-container--wide

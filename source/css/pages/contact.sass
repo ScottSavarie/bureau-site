@@ -25,16 +25,25 @@
   margin-bottom: $l-s
   position: relative
   padding-top: 2em
+  color: $c-darkgrey !important
   @media only screen and (min-width: $second-break)
     float: right  
     margin-bottom: 0
     padding-top: 0
+    &:hover
+      .contact-pin-wrap
+        top: -3px
+        +box-shadow(0 18px 18px rgba(0,0,0,0.2))
+
 
 
 .contact-pin-wrap
   position: absolute
-  left: 5%
-  top: 5px
+  left: 0
+  top: -65px
+  +single-transition(all, 0.2s, ease-out)
+  @media only screen and (min-width: $first-break)
+    left: 5%
   @media only screen and (min-width: $second-break)
     left: 14%
     top: 12px
@@ -93,3 +102,7 @@
     font-size: $f-xl *2
 
 
+.t
+  margin-right: 15px
+.tf
+  margin-right: 5px  
