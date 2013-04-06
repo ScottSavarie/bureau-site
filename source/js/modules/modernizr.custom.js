@@ -1,5 +1,5 @@
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
+ * Build: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-flexboxlegacy-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-hashchange-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-inlinesvg-svg-svgclippaths-touch-shiv-mq-cssclasses-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
  */
 ;
 
@@ -87,7 +87,25 @@ window.Modernizr = (function( window, document, undefined ) {
 
     },
 
+    testMediaQuery = function( mq ) {
 
+      var matchMedia = window.matchMedia || window.msMatchMedia;
+      if ( matchMedia ) {
+        return matchMedia(mq).matches;
+      }
+
+      var bool;
+
+      injectElementWithStyles('@media ' + mq + ' { #' + mod + ' { position: absolute; } }', function( node ) {
+        bool = (window.getComputedStyle ?
+                  getComputedStyle(node, null) :
+                  node.currentStyle)['position'] == 'absolute';
+      });
+
+      return bool;
+
+     },
+ 
 
     isEventSupported = (function() {
 
@@ -239,20 +257,13 @@ window.Modernizr = (function( window, document, undefined ) {
         }
     }    tests['flexbox'] = function() {
       return testPropsAll('flexWrap');
-    };    tests['canvas'] = function() {
-        var elem = document.createElement('canvas');
-        return !!(elem.getContext && elem.getContext('2d'));
-    };
-
-    tests['canvastext'] = function() {
-        return !!(Modernizr['canvas'] && is(document.createElement('canvas').getContext('2d').fillText, 'function'));
     };
 
 
-
-    tests['webgl'] = function() {
-        return !!window.WebGLRenderingContext;
+    tests['flexboxlegacy'] = function() {
+        return testPropsAll('boxDirection');
     };
+
 
 
     tests['touch'] = function() {
@@ -268,14 +279,6 @@ window.Modernizr = (function( window, document, undefined ) {
 
         return bool;
     };
-
-
-
-    tests['geolocation'] = function() {
-        return 'geolocation' in navigator;
-    };
-
-
     tests['postmessage'] = function() {
       return !!window.postMessage;
     };
@@ -293,14 +296,7 @@ window.Modernizr = (function( window, document, undefined ) {
       return isEventSupported('hashchange', window) && (document.documentMode === undefined || document.documentMode > 7);
     };
 
-    tests['history'] = function() {
-      return !!(window.history && history.pushState);
-    };
 
-    tests['draganddrop'] = function() {
-        var div = document.createElement('div');
-        return ('draggable' in div) || ('ondragstart' in div && 'ondrop' in div);
-    };
 
     tests['websockets'] = function() {
         return 'WebSocket' in window || 'MozWebSocket' in window;
@@ -510,9 +506,6 @@ window.Modernizr = (function( window, document, undefined ) {
       return (div.firstChild && div.firstChild.namespaceURI) == ns.svg;
     };
 
-    tests['smil'] = function() {
-        return !!document.createElementNS && /SVGAnimate/.test(toString.call(document.createElementNS(ns.svg, 'animate')));
-    };
 
 
     tests['svgclippaths'] = function() {
@@ -782,6 +775,7 @@ window.Modernizr = (function( window, document, undefined ) {
     Modernizr._domPrefixes  = domPrefixes;
     Modernizr._cssomPrefixes  = cssomPrefixes;
 
+    Modernizr.mq            = testMediaQuery;
 
     Modernizr.hasEvent      = isEventSupported;
 
@@ -792,17 +786,7 @@ window.Modernizr = (function( window, document, undefined ) {
     Modernizr.testAllProps  = testPropsAll;
 
 
-    Modernizr.testStyles    = injectElementWithStyles;
-    Modernizr.prefixed      = function(prop, obj, elem){
-      if(!obj) {
-        return testPropsAll(prop, 'pfx');
-      } else {
-            return testPropsAll(prop, obj, elem);
-      }
-    };
-
-
-    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
+    Modernizr.testStyles    = injectElementWithStyles;    docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
 
                                                     (enableClasses ? ' js ' + classes.join(' ') : '');
 

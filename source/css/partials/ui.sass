@@ -38,7 +38,7 @@ form
         margin: $l-s 0
         width: 94%
         font-size: $f-m
-        font-weight: 100
+        +helvetica-light
     .input-field
       display: inline-block
       width: 100%
@@ -49,7 +49,7 @@ form
         margin: $l-s $l-s
         width: 45%
         font-size: $f-m
-        font-weight: 100
+        +helvetica-light
 
     .btn-primary
       width: 100%  
@@ -78,7 +78,8 @@ a.btn-primary, a:visited.btn-primary
   color: white !important
 .btn-primary, %btn-primary
   background: $c-red
-  font-weight: 900
+  +helvetica-bold
+  -webkit-font-smoothing: antialiased
   +border-radius(3px)
   +single-transition(all, 0.2s, ease-out)
   color: white
