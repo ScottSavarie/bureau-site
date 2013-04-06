@@ -1,24 +1,24 @@
 /*
-Syntax error: Undefined variable: "$c-red".
-        on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass
+Syntax error: Undefined mixin 'helvetica-bold'.
+        on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass, in `helvetica-bold'
+        from line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass
 
+2:   max-width: 650px
 3:   margin: 0 auto
 4: 
 5: #working-with-close, 
 6: #working-with-trigger
-7:   font-weight: 900
+7:   +helvetica-bold
 8:   color: $c-red
 9:   font-size: $f-m
 10:   cursor: pointer
 11:   display: block
 12:   +single-transition(all, 0.2s, ease-out)
-13:   &:hover, &:focus
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass:8
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass:7:in `helvetica-bold'
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass:7
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -106,4 +106,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$c-red\".\A         on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass\A \A 3:   margin: 0 auto\A 4: \A 5: #working-with-close, \A 6: #working-with-trigger\A 7:   font-weight: 900\A 8:   color: $c-red\A 9:   font-size: $f-m\A 10:   cursor: pointer\A 11:   display: block\A 12:   +single-transition(all, 0.2s, ease-out)\A 13:   &:hover, &:focus"; }
+  content: "Syntax error: Undefined mixin 'helvetica-bold'.\A         on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass, in `helvetica-bold'\A         from line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/worksheet.sass\A \A 2:   max-width: 650px\A 3:   margin: 0 auto\A 4: \A 5: #working-with-close, \A 6: #working-with-trigger\A 7:   +helvetica-bold\A 8:   color: $c-red\A 9:   font-size: $f-m\A 10:   cursor: pointer\A 11:   display: block\A 12:   +single-transition(all, 0.2s, ease-out)"; }

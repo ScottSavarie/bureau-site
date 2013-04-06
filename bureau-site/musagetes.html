@@ -50,25 +50,25 @@
           </ul>
           <ul class='nav-social ss-icon'>
             <li>
-              <a href="#">twitter</a>
+              <a href="http://www.twitter.com/bureaugroup">twitter</a>
             </li>
             <li>
-              <a href="#">facebook</a>
+              <a href="http://www.facebook.com/bureaugroup">facebook</a>
             </li>
             <li>
-              <a href="#">google+</a>
+              <a href="https://plus.google.com/111226183375551688410/">google+</a>
             </li>
             <li>
-              <a href="#">linkedin</a>
+              <a href="http://www.linkedin.com/company/2904088">linkedin</a>
             </li>
             <li>
-              <a href="#">youtube</a>
+              <a href="http://www.youtube.com/channel/UC7SElPeEBqy-q1ifcKVkbqg/">youtube</a>
             </li>
             <li>
-              <a href="#">pinterest</a>
+              <a href="http://www.pinterest.com/bureaugroup/">pinterest</a>
             </li>
             <li>
-              <a href="#">instagram</a>
+              <a href="http://www.instagram.com/bureaugroup">instagram</a>
             </li>
           </ul>
         </div>
@@ -80,16 +80,16 @@
     <h1 class='header--grey txt-center'>Get in touch</h1>
     <form action='contact-form-handler.php' id='contact-form' method='post'>
       <fieldset>
-        <input class='input-field' name='name' placeholder='your full name' type='name'>
-        <input class='input-field' name='email' placeholder='email address' type='email'>
-        <input class='input-field' name='tel' placeholder='phone number' type='tel'>
-        <input class='input-field' name='text' placeholder='your company' type='text'>
-        <textarea class='input-field--message' name='message' placeholder='tell us more...'></textarea>
+        <input class='input-field' name='name' placeholder='Your full name' type='name'>
+        <input class='input-field' name='email' placeholder='Your email address' type='email'>
+        <input class='input-field' name='tel' placeholder='Your phone number' type='tel'>
+        <input class='input-field' name='text' placeholder='Your company' type='text'>
+        <textarea class='input-field--message' name='message' placeholder='Tell us more…'></textarea>
         <input class='btn-primary' id='submit' name='submit' type='submit' value='Submit'>
       </fieldset>
     </form>
     <div class='contact-details-container'>
-      <div class='contact-map'>
+      <a class='contact-map' href='http://goo.gl/maps/fLbOM'>
         <div class='contact-pin-wrap'>
           <div class='contact-pin'>
             <img class='bureau-office' src='img/bureau-office.jpg'>
@@ -101,16 +101,25 @@
           </div>
         </div>
         <img class='map-image' src='img/bureau-map.jpg'>
-      </div>
+      </a>
       <ul class='contact-list'>
         <li>
           <a href='mailto:hello@bureau.ca'>
             <span>hello@bureau.ca</span>
           </a>
         </li>
-        <li>T 705 586 3189</li>
-        <li>TF 877 586 3189</li>
-        <li>F 705 586 3197</li>
+        <li>
+          <span class='txt-bold t'>T</span>
+          <span>705 586 3189</span>
+        </li>
+        <li>
+          <span class='txt-bold tf'>TF</span>
+          <span>877 586 3189</span>
+        </li>
+        <li>
+          <span class='txt-bold t'>F</span>
+          <span>705 586 3197</span>
+        </li>
       </ul>
     </div>
     <span class='close-trigger' id='close-trigger'>
@@ -179,11 +188,11 @@
           </div>
         </div>
         <div class='mailing-list'>
-          <div id="mc_embed_signup"><form action="http://scottsavarie.us2.list-manage.com/subscribe/post?u=6e9956ec2c1aec38af2917d61&amp;id=9f3ad84685" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><label for="mce-EMAIL">Bulletin</label><input type="email" value="" name="EMAIL" class="email input-field" id="mce-EMAIL" placeholder="Your email address" required><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-secondary"></form></div>
+          <div id="mc_embed_signup"><form action="http://bureaugroup.us6.list-manage1.com/subscribe/post?u=17df770b3c8d60a832042045e&amp;id=8ab0e97015" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><label for="mce-EMAIL">Bulletin</label><input type="email" value="" name="EMAIL" class="email input-field" id="mce-EMAIL" placeholder="Your email address" required><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-secondary"></form></div>
         </div>
         <div class='contact-info'>
           <address>
-            <span class="txt-bold">Bureau</span> 170 Elgin St. Sudbury Ontario P3E 3N5 | 705 586 3189
+            <span class="txt-bold">Bureau</span> <a class="grey-link" href="http://goo.gl/maps/fLbOM">170 Elgin St. Sudbury Ontario P3E 3N5</a> | 705 586 3189
           </address>
         </div>
       </div>
@@ -191,6 +200,8 @@
     <script src='js/modules/jquery-1.8.3.min.js'></script>
     <script src='js/modules/log-polyfill.js'></script>
     <script src='js/modules/modernizr.custom.js'></script>
+    <script src='js/modules/placeholder.js'></script>
+    <script src='js/modules/respond.min.js'></script>
     <script src='js/modules/ss-social.js'></script>
     <script src='js/main.js'></script>
     <script>(function(d, s, id) {

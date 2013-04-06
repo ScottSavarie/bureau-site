@@ -1,28 +1,20 @@
 /*
-Syntax error: Undefined variable: "$third-break".
-        on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass
+Syntax error: Undefined mixin 'helvetica-light'.
+        on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass, in `helvetica-light'
+        from line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass
 
-2:   font-weight: 100
+1: footer
+2:   +helvetica-light
 3: 
 4: address
 5:   font-style: normal  
 6:   font-size: 0.75em
 7:   @media only screen and (min-width: $third-break)
-8:     font-size: initial
-9: 
-10: .social-module, .mailing-list
-11:   +inline-block
-12:   width: 100%
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass:7
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:396:in `map'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:396:in `run_interp_no_strip'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:406:in `run_interp'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:360:in `visit_media'
+/Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass:2:in `helvetica-light'
+/Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass:2
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -110,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$third-break\".\A         on line 7 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass\A \A 2:   font-weight: 100\A 3: \A 4: address\A 5:   font-style: normal  \A 6:   font-size: 0.75em\A 7:   @media only screen and (min-width: $third-break)\A 8:     font-size: initial\A 9: \A 10: .social-module, .mailing-list\A 11:   +inline-block\A 12:   width: 100%"; }
+  content: "Syntax error: Undefined mixin 'helvetica-light'.\A         on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass, in `helvetica-light'\A         from line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/footer.sass\A \A 1: footer\A 2:   +helvetica-light\A 3: \A 4: address\A 5:   font-style: normal  \A 6:   font-size: 0.75em\A 7:   @media only screen and (min-width: $third-break)"; }

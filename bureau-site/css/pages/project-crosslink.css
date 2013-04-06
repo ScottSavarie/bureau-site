@@ -4,7 +4,7 @@ Syntax error: Undefined variable: "$f-m".
 
 1: .project-crosslink
 2:   font-size: $f-m
-3:   font-weight: 900
+3:   +helvetica-bold
 4:   text-align: center
 5:   a
 6:     +single-transition(all, 0.2s, ease-out)
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$f-m\".\A         on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/project-crosslink.sass\A \A 1: .project-crosslink\A 2:   font-size: $f-m\A 3:   font-weight: 900\A 4:   text-align: center\A 5:   a\A 6:     +single-transition(all, 0.2s, ease-out)\A 7:     background-color: white"; }
+  content: "Syntax error: Undefined variable: \"$f-m\".\A         on line 2 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/project-crosslink.sass\A \A 1: .project-crosslink\A 2:   font-size: $f-m\A 3:   +helvetica-bold\A 4:   text-align: center\A 5:   a\A 6:     +single-transition(all, 0.2s, ease-out)\A 7:     background-color: white"; }

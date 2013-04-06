@@ -1,23 +1,26 @@
 /*
-Syntax error: Undefined mixin 'inline-block'.
-        on line 5 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass, in `inline-block'
-        from line 5 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass
+Syntax error: Undefined variable: "$l-s".
+        on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass
 
-1: .profile-img
-2:   width: 100%
-3: 
 4: .people
-5:   +inline-block
-6:   width: 100%
-7:   box-sizing: border-box
-8:   padding: $l-s
-9:   text-overflow: ellipsis
-10:   overflow: hidden
+5:   display: inline-block
+6:   vertical-align: top
+7:   width: 100%
+8:   box-sizing: border-box
+9:   padding: $l-s /2
+10:   text-overflow: ellipsis
+11:   overflow: hidden
+12:   .twitter-follow-button
+13:     margin-top: 0.2em
+14:     margin-right: 0.4em
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass:5:in `inline-block'
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass:5
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass:9
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/operation.rb:74:in `_perform'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -105,4 +108,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'inline-block'.\A         on line 5 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass, in `inline-block'\A         from line 5 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass\A \A 1: .profile-img\A 2:   width: 100%\A 3: \A 4: .people\A 5:   +inline-block\A 6:   width: 100%\A 7:   box-sizing: border-box\A 8:   padding: $l-s\A 9:   text-overflow: ellipsis\A 10:   overflow: hidden"; }
+  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass\A \A 4: .people\A 5:   display: inline-block\A 6:   vertical-align: top\A 7:   width: 100%\A 8:   box-sizing: border-box\A 9:   padding: $l-s /2\A 10:   text-overflow: ellipsis\A 11:   overflow: hidden\A 12:   .twitter-follow-button\A 13:     margin-top: 0.2em\A 14:     margin-right: 0.4em"; }
