@@ -11,7 +11,7 @@ title: "Bureau - Home"
       .video-wrapper
         .video-mask
           %img{:src=>"img/bureau-intro.svg", :width=>"1500", :height=>"845"}
-        <video class="home-video--intro" width="1368" height="769" autoplay="autoplay" poster="img/video-poster2.jpg" loop="true"><source src="videos/Bureau_homepage.mp4" type="video/mp4" /><source src="videos/Bureau_homepage.ogg" type="video/ogg"/><source src="videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="m/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="m/player.swf"><!--<![endif]--><img src="m/video.jpg" width="854" height="480" alt="Video"></object></video>
+        <video class="home-video--intro" width="1368" height="769" autoplay="autoplay" poster="img/video-poster2.jpg" loop="true"><source src="videos/Bureau_homepage.mp4" type="video/mp4" /><source src="videos/Bureau_homepage.oggtheora.ogg" type="video/ogg"/><source src="videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
         / #ytplayer.home-video--intro
 
         // :javascript
@@ -78,10 +78,9 @@ title: "Bureau - Home"
 
 %section.l-module--spaced
   .l-container--list
-    %a{:href=>"#"}
-      %h1.header--grey.txt-center 
-        %a.grey-link{:href=>"work.html"}
-          %span Our work
+    %h1.header--grey.txt-center 
+      %a.grey-link{:href=>"work.html"}
+        %span Our work
     %ul.project-thumbnails
       %li.palladino
         %a{:href=>"#"}

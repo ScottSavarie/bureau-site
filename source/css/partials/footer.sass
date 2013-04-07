@@ -20,13 +20,18 @@ address
     margin-bottom: 0
     border-right: 1px solid $c-lightergrey
     margin-right: $l-m
+  @media only screen and (min-width: 1496px)
+    width: 31%
 
 .mailing-list
   @media only screen and (min-width: $third-break)
     padding-right: $l-m
     border-right: none
-    @media only screen and (min-width: 1492px)
-      border-right: 1px solid $c-lightergrey
+  @media only screen and (min-width: 1496px)
+    width: 31%
+  @media only screen and (min-width: 1285px)
+    border-right: 1px solid $c-lightergrey
+
 
 
 .contact-info
@@ -34,9 +39,9 @@ address
     margin-top: $l-m
     padding-top: $l-m
     border-top: 1px solid $c-lightergrey
-  @media only screen and (min-width: 1492px)
-    +inline-block
-    vertical-align: initial
+  @media only screen and (min-width: 1285px)
+    display: inline-block
+    vertical-align: bottom
     margin-top: 0
     border-top: none
     padding-top: 0.75em
@@ -59,3 +64,13 @@ address
     margin: 0 $l-s
   .button
     +inline-block 
+
+.footer-tel
+  padding-right: $l-s /1.4
+  margin-right: $l-s /2
+  padding-top: $l-s /2
+  padding-bottom: 0.2em
+  border-right: 1px solid $c-lightergrey   
+
+.tel-email
+  padding-top: $l-s /2
