@@ -1,3 +1,13 @@
+/* =Modernizer replace SVG with PNG
+============================================================================== */
+
+
+if(!Modernizr.svg) {
+    $('img[src*="svg"]').attr('src', function() {
+        return $(this).attr('src').replace('.svg', '.png');
+    });
+}
+
 
 
 /* =Contact Slide Down
@@ -33,19 +43,6 @@ $("#working-with-trigger, #working-with-close").click(function(){
     $('#working-with-close').toggleClass("rotated");
 });
 
-
-
-/* =Home fade ins
-============================================================================== */
-
-// $(document).ready(function() {
-//     $("#video-trigger, #home-arrow").addClass("hidden");
-
-//       setTimeout(function(){
-//             $("#video-trigger, #home-arrow").removeClass("hidden");
-//       },900);
-
-// });
 
 
 

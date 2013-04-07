@@ -35,8 +35,6 @@
   height: 100%  
 
 .video-mask
-  // background: url(../img/bureau-intro.svg) no-repeat
-  // background-size: cover
   position: absolute
   z-index: 10
   width: 100%
@@ -120,12 +118,12 @@
       margin-right: 0
 
 .dotted-arrow
-  background: url(../img/dotted-arrow-vert.svg) no-repeat
+  // background: url(../img/dotted-arrow-vert.svg) no-repeat
   height: 195px
   width: 14px
   margin: 0 auto
   @media only screen and (min-width: $third-break)
-    background: url(../img/dotted-arrow.svg) no-repeat
+    // background: url(../img/dotted-arrow.svg) no-repeat
     height: 14px
     width: 195px
     position: absolute
@@ -135,8 +133,20 @@
   @media only screen and (min-width: $third-break + 200)
     left: 82%
 
-// #specialty-one, #specialty-two, #specialty-three
-//   +single-transition(all, 1s, ease-out)
+.svg
+  .dotted-arrow
+    background: url(../img/dotted-arrow-vert.svg) no-repeat
+    @media only screen and (min-width: $third-break)
+      background: url(../img/dotted-arrow.svg) no-repeat
+
+.no-svg
+  .dotted-arrow
+    background: url(../img/dotted-arrow-vert.png) no-repeat
+    @media only screen and (min-width: $third-break)
+      background: url(../img/dotted-arrow.png) no-repeat
+
+
+
 
 
 #videotrigger
