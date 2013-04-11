@@ -19,6 +19,17 @@ form
   @media only screen and (min-width: $second-break)
     font-size: inherit
 
+#workform-errors, #contactform-errors
+  margin-bottom: $l-m
+
+.parsley-error-list
+  color: $c-red
+  @media only screen and (min-width: $second-break)
+    font-size: $f-l
+
+.parsley-error
+  border: 2px solid $c-red !important
+
 
 #contact-form, #worksheet-form
   text-align: center
