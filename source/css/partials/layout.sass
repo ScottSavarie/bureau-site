@@ -5,11 +5,15 @@
 
 .l-module--spaced
   @extend %l-module
-  padding: $l-xxl 0
+  padding: $l-l 0
+  @media only screen and (min-width: $second-break)
+    padding: $l-xxl 0
 
 .l-module--wide
   @extend %l-module
-  padding: $l-xl 0
+  padding: $l-m 0
+  @media only screen and (min-width: $second-break)
+    padding: $l-xl 0
 
 
 .l-container, %l-container
@@ -26,6 +30,7 @@
 
 .l-container--wide
   @extend %l-container
+  padding: $l-s
   @media only screen and (min-width: $second-break)
     padding: $l-l
 
