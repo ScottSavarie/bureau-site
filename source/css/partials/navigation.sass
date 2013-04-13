@@ -26,6 +26,7 @@
   +box-shadow(0 0 6px 0 rgba(0,0,0,0.23))
   z-index: 3
   position: relative
+  background: white
   background: rgba(255,255,255,0.96)
   z-index: 100
   +single-transition(opacity, 0.2s, ease)
@@ -73,14 +74,11 @@ a.logo, a.logo:visited
   +single-transition(all, 0.2s, ease-out)
 
 .nav-container
-  max-height: 0px
-  +opacity(0)
   +single-transition(all, 0.2s, ease-out)
   @media only screen and (min-width: $second-break)
     float: left
     +opacity(1)
     max-height: auto
-    padding-bottom: $l-m
     margin-top: 1.25em
   @media only screen and (min-width: $third-break)
     float: right
@@ -139,6 +137,7 @@ a.logo, a.logo:visited
   position: relative
   float: right
   margin-top: 1.5em
+  cursor: pointer
   @media only screen and (min-width: $second-break)
     display: none
   .nav-icon
@@ -149,19 +148,16 @@ a.logo, a.logo:visited
     background: $c-lightgrey
     &:first-child
       margin-top: 0
-#toggle
-  position: absolute
-  width: 2em
-  height: 2em
-  top: 44px
-  right: 10px
-  cursor: pointer
-  +opacity (0)
-  &:checked
-    ~div
-      max-height: 1000px
-      +opacity(1)
+#navtoggle
   @media only screen and (min-width: $second-break)
     display: none
 
 
+.nav-hidden
+  max-height: 0px
+  +opacity(0)
+
+.nav-visible
+  max-height: 1000px
+  +opacity(1)
+  

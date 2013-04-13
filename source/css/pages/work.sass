@@ -11,14 +11,13 @@
     +box-sizing(border-box)
     display: inline-block
     +single-transition(all, 0.2s, ease-out)
+    img
+      width: 100%
     a
       display: block
     &:hover, &:focus
       +box-shadow(0 3px 9px 0 rgba(0,0,0,0.4))
       +opacity(0.8)
-    @media only screen and (min-width: $third-break)
-      width: 31%
-      margin: 1% 
   .bird
     &:hover, &:focus
       +box-shadow(0 3px 9px rgba(0,0,0,0.2))
