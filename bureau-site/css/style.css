@@ -548,7 +548,7 @@ a.logo, a.logo:visited {
 
 /* line 19, partials/layout.sass */
 .l-container, .l-container--thin, .l-container--wide, .l-container--narrow, .l-container--list, .l-container--full {
-  width: 85%;
+  width: 90%;
   max-width: 1280px;
   margin: 0 auto;
   display: block;
@@ -572,12 +572,12 @@ a.logo, a.logo:visited {
 
 /* line 41, partials/layout.sass */
 .l-container--list {
-  width: 87%; }
+  width: 92%; }
 
 /* line 44, partials/layout.sass */
 .l-container--full {
   width: 100%;
-  max-width: 85%; }
+  max-width: 90%; }
   @media only screen and (min-width: 770px) {
     /* line 44, partials/layout.sass */
     .l-container--full {
@@ -914,13 +914,16 @@ a.btn-primary, a:visited.btn-primary {
       width: 70%;
       padding-bottom: 39%; } }
 
-@media only screen and (max-height: 750px) and (min-width: 580px) {
-  /* line 23, pages/home.sass */
-  .header-video-wrapper {
-    width: 70%;
-    padding-bottom: 39%; } }
+/* line 23, pages/home.sass */
+.header-video-wrapper {
+  text-align: center; }
+  @media only screen and (max-height: 750px) and (min-width: 580px) {
+    /* line 23, pages/home.sass */
+    .header-video-wrapper {
+      width: 70%;
+      padding-bottom: 39%; } }
 
-/* line 29, pages/home.sass */
+/* line 30, pages/home.sass */
 .home-video--intro {
   position: absolute;
   top: 0;
@@ -928,7 +931,7 @@ a.btn-primary, a:visited.btn-primary {
   width: 98%;
   height: 100%; }
 
-/* line 36, pages/home.sass */
+/* line 37, pages/home.sass */
 .home-video {
   position: absolute;
   top: 0;
@@ -936,17 +939,33 @@ a.btn-primary, a:visited.btn-primary {
   width: 100%;
   height: 100%; }
 
-/* line 43, pages/home.sass */
+/* line 44, pages/home.sass */
 .video-mask {
   position: absolute;
   z-index: 10;
   width: 100%;
   height: 100%; }
-  /* line 48, pages/home.sass */
+  /* line 49, pages/home.sass */
   .video-mask img {
     width: 100%; }
 
 /* line 52, pages/home.sass */
+.video-poster-header {
+  width: 99%; }
+  @media only screen and (min-width: 770px) {
+    /* line 52, pages/home.sass */
+    .video-poster-header {
+      display: none; } }
+
+/* line 57, pages/home.sass */
+#home-video--intro {
+  display: none; }
+  @media only screen and (min-width: 770px) {
+    /* line 57, pages/home.sass */
+    #home-video--intro {
+      display: block; } }
+
+/* line 64, pages/home.sass */
 .home-introtext {
   width: 100%;
   position: relative;
@@ -957,31 +976,31 @@ a.btn-primary, a:visited.btn-primary {
   color: #7c7c7c;
   background: white; }
   @media only screen and (min-width: 820px) {
-    /* line 52, pages/home.sass */
+    /* line 64, pages/home.sass */
     .home-introtext {
       font-size: 1.5em;
       line-height: 1.4;
       width: 75%; } }
   @media only screen and (max-height: 750px) and (min-width: 580px) {
-    /* line 52, pages/home.sass */
+    /* line 64, pages/home.sass */
     .home-introtext {
       margin-top: -15%; } }
 
-/* line 67, pages/home.sass */
+/* line 79, pages/home.sass */
 .arrow-wrap {
   text-align: center; }
 
-/* line 70, pages/home.sass */
+/* line 82, pages/home.sass */
 .home-arrow {
   margin-top: 5%;
   display: block;
   cursor: pointer; }
-  /* line 74, pages/home.sass */
+  /* line 86, pages/home.sass */
   .home-arrow:hover, .home-arrow:focus {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
     opacity: 0.9; }
 
-/* line 83, pages/home.sass */
+/* line 95, pages/home.sass */
 #specialty-one {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.2s;
@@ -989,7 +1008,7 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.2s;
   transition: opacity 0.4s ease-out 0.2s; }
 
-/* line 86, pages/home.sass */
+/* line 98, pages/home.sass */
 #specialty-two {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.4s;
@@ -997,7 +1016,7 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.4s;
   transition: opacity 0.4s ease-out 0.4s; }
 
-/* line 89, pages/home.sass */
+/* line 101, pages/home.sass */
 #specialty-three {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.6s;
@@ -1005,47 +1024,47 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.6s;
   transition: opacity 0.4s ease-out 0.6s; }
 
-/* line 92, pages/home.sass */
+/* line 104, pages/home.sass */
 .hidden {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   visibility: hidden; }
 
-/* line 96, pages/home.sass */
+/* line 108, pages/home.sass */
 .visible {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   visibility: visible; }
 
-/* line 100, pages/home.sass */
+/* line 112, pages/home.sass */
 .specialty {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   position: relative;
   margin-top: 1.64681em; }
-  /* line 106, pages/home.sass */
+  /* line 118, pages/home.sass */
   .specialty h2, .specialty p {
     text-align: left; }
-  /* line 108, pages/home.sass */
+  /* line 120, pages/home.sass */
   .specialty h2 {
     margin-top: 2.47022em; }
-  /* line 110, pages/home.sass */
+  /* line 122, pages/home.sass */
   .specialty img {
     position: relative;
     z-index: 10; }
   @media only screen and (min-width: 580px) {
-    /* line 100, pages/home.sass */
+    /* line 112, pages/home.sass */
     .specialty {
       width: 80%; } }
   @media only screen and (min-width: 770px) {
-    /* line 100, pages/home.sass */
+    /* line 112, pages/home.sass */
     .specialty {
       width: 70%; } }
   @media only screen and (min-width: 960px) {
-    /* line 100, pages/home.sass */
+    /* line 112, pages/home.sass */
     .specialty {
-      width: 29%;
+      width: 28%;
       display: -moz-inline-stack;
       display: inline-block;
       vertical-align: middle;
@@ -1054,17 +1073,17 @@ a.btn-primary, a:visited.btn-primary {
       *display: inline;
       vertical-align: top;
       margin-right: 5%; }
-      /* line 123, pages/home.sass */
+      /* line 135, pages/home.sass */
       .specialty:last-child {
         margin-right: 0; } }
 
-/* line 126, pages/home.sass */
+/* line 138, pages/home.sass */
 .dotted-arrow {
   height: 195px;
   width: 14px;
   margin: 0 auto; }
   @media only screen and (min-width: 960px) {
-    /* line 126, pages/home.sass */
+    /* line 138, pages/home.sass */
     .dotted-arrow {
       height: 14px;
       width: 195px;
@@ -1073,27 +1092,27 @@ a.btn-primary, a:visited.btn-primary {
       left: 64%;
       z-index: 0; } }
   @media only screen and (min-width: 1160px) {
-    /* line 126, pages/home.sass */
+    /* line 138, pages/home.sass */
     .dotted-arrow {
       left: 82%; } }
 
-/* line 143, pages/home.sass */
+/* line 155, pages/home.sass */
 .svg .dotted-arrow {
   background: url(../img/dotted-arrow-vert.svg) no-repeat; }
   @media only screen and (min-width: 960px) {
-    /* line 143, pages/home.sass */
+    /* line 155, pages/home.sass */
     .svg .dotted-arrow {
       background: url(../img/dotted-arrow.svg) no-repeat; } }
 
-/* line 149, pages/home.sass */
+/* line 161, pages/home.sass */
 .no-svg .dotted-arrow {
   background: url(../img/dotted-arrow-vert.png) no-repeat; }
   @media only screen and (min-width: 960px) {
-    /* line 149, pages/home.sass */
+    /* line 161, pages/home.sass */
     .no-svg .dotted-arrow {
       background: url(../img/dotted-arrow.png) no-repeat; } }
 
-/* line 158, pages/home.sass */
+/* line 170, pages/home.sass */
 #videotrigger {
   width: 100%;
   padding-bottom: 56.25%;
@@ -1331,7 +1350,7 @@ a.btn-primary, a:visited.btn-primary {
   vertical-align: top;
   width: 100%;
   box-sizing: border-box;
-  padding: 0.4117em;
+  padding: 0.4117em 0;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-sizing: border-box;
@@ -1369,8 +1388,9 @@ a.btn-primary, a:visited.btn-primary {
   @media only screen and (min-width: 580px) {
     /* line 4, pages/profile.sass */
     .people {
-      width: 49%; }
-      /* line 37, pages/profile.sass */
+      width: 49%;
+      padding: 0.4117em; }
+      /* line 38, pages/profile.sass */
       .people img {
         float: none;
         width: 100%;
@@ -1385,7 +1405,7 @@ a.btn-primary, a:visited.btn-primary {
     .people {
       width: 13.6%; } }
 
-/* line 51, pages/profile.sass */
+/* line 52, pages/profile.sass */
 .bureau-image {
   background: url(../img/profile-1.jpg) no-repeat;
   background-size: 100%;
@@ -1395,47 +1415,47 @@ a.btn-primary, a:visited.btn-primary {
   padding-bottom: 39%;
   display: block; }
   @media only screen and (min-width: 960px) {
-    /* line 51, pages/profile.sass */
+    /* line 52, pages/profile.sass */
     .bureau-image {
       background-position-y: top; } }
 
-/* line 62, pages/profile.sass */
+/* line 63, pages/profile.sass */
 .profile-header {
   padding-top: 0.5em; }
   @media only screen and (min-width: 960px) {
-    /* line 62, pages/profile.sass */
+    /* line 63, pages/profile.sass */
     .profile-header {
       padding-top: 1.64681em; } }
 
-/* line 67, pages/profile.sass */
+/* line 68, pages/profile.sass */
 .manifesto-list {
   counter-reset: li;
   margin-left: 0;
   padding-left: 0.4em;
   font-size: 0.875em; }
-  /* line 72, pages/profile.sass */
+  /* line 73, pages/profile.sass */
   .manifesto-list i {
     display: block; }
   @media only screen and (min-width: 770px) {
-    /* line 67, pages/profile.sass */
+    /* line 68, pages/profile.sass */
     .manifesto-list {
       font-size: 1.5em; } }
-  /* line 76, pages/profile.sass */
+  /* line 77, pages/profile.sass */
   .manifesto-list h2 {
     color: #bc2f33; }
 
-/* line 79, pages/profile.sass */
+/* line 80, pages/profile.sass */
 .manifesto-list > li {
   position: relative;
   margin: 0 0 1.64681em 1.64681em;
   list-style: none;
   padding-left: 1.64681em; }
   @media only screen and (min-width: 770px) {
-    /* line 79, pages/profile.sass */
+    /* line 80, pages/profile.sass */
     .manifesto-list > li {
       padding-left: 2.05852em; } }
 
-/* line 87, pages/profile.sass */
+/* line 88, pages/profile.sass */
 .manifesto-list > li:before {
   content: counter(li);
   counter-increment: li;
@@ -1453,11 +1473,11 @@ a.btn-primary, a:visited.btn-primary {
   width: 2.8em;
   height: 2.8em; }
   @media only screen and (min-width: 770px) {
-    /* line 87, pages/profile.sass */
+    /* line 88, pages/profile.sass */
     .manifesto-list > li:before {
       top: 7px; } }
 
-/* line 105, pages/profile.sass */
+/* line 106, pages/profile.sass */
 .page-profile .project-crosslink {
   margin-top: 0; }
 
@@ -1630,44 +1650,45 @@ a.btn-primary, a:visited.btn-primary {
   margin-bottom: 0.82341em;
   position: relative;
   padding-top: 2em;
-  color: #5f6163 !important; }
+  color: #5f6163 !important;
+  display: block; }
   @media only screen and (min-width: 770px) {
     /* line 24, pages/contact.sass */
     .contact-map {
       float: right;
       margin-bottom: 0;
       padding-top: 0; }
-      /* line 34, pages/contact.sass */
+      /* line 35, pages/contact.sass */
       .contact-map:hover .contact-pin-wrap {
         top: -3px;
         -webkit-box-shadow: 0 18px 18px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0 18px 18px rgba(0, 0, 0, 0.2);
         box-shadow: 0 18px 18px rgba(0, 0, 0, 0.2); } }
 
-/* line 40, pages/contact.sass */
+/* line 41, pages/contact.sass */
 .contact-pin-wrap {
   position: absolute;
-  left: 0;
-  top: -65px;
+  left: -11px;
+  top: -22px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
   @media only screen and (min-width: 580px) {
-    /* line 40, pages/contact.sass */
+    /* line 41, pages/contact.sass */
     .contact-pin-wrap {
       left: 5%; } }
   @media only screen and (min-width: 770px) {
-    /* line 40, pages/contact.sass */
+    /* line 41, pages/contact.sass */
     .contact-pin-wrap {
       left: 14%;
       top: 12px; } }
 
-/* line 51, pages/contact.sass */
+/* line 52, pages/contact.sass */
 .contact-pin {
   background: white;
   padding: 0.82341em;
-  width: 280px;
+  width: 240px;
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
@@ -1676,7 +1697,11 @@ a.btn-primary, a:visited.btn-primary {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px; }
-  /* line 57, pages/contact.sass */
+  @media only screen and (min-width: 770px) {
+    /* line 52, pages/contact.sass */
+    .contact-pin {
+      width: 280px; } }
+  /* line 60, pages/contact.sass */
   .contact-pin:after, .contact-pin:before {
     content: "";
     position: absolute;
@@ -1688,31 +1713,38 @@ a.btn-primary, a:visited.btn-primary {
     border-left: 0.8125em solid transparent;
     border-right: 0.8125em solid transparent;
     border-bottom: 0; }
-  /* line 69, pages/contact.sass */
+  /* line 72, pages/contact.sass */
   .contact-pin:after {
     z-index: 200;
     border-top-color: white;
     bottom: -0.85em; }
 
-/* line 74, pages/contact.sass */
-.bureau-address {
-  line-height: 1.3; }
-
 /* line 77, pages/contact.sass */
+.bureau-address {
+  line-height: 1.3;
+  font-size: 0.875em;
+  padding-bottom: 0.5em; }
+  @media only screen and (min-width: 770px) {
+    /* line 77, pages/contact.sass */
+    .bureau-address {
+      font-size: inherit;
+      padding-bottom: 0; } }
+
+/* line 85, pages/contact.sass */
 .bureau-office {
   float: left;
   margin-right: 0.82341em; }
 
-/* line 81, pages/contact.sass */
+/* line 89, pages/contact.sass */
 .bureau-title {
   font-size: 1.118em;
   font-weight: 700; }
 
-/* line 87, pages/contact.sass */
+/* line 95, pages/contact.sass */
 .map-image {
   border: 1px solid #dddddd; }
 
-/* line 92, pages/contact.sass */
+/* line 100, pages/contact.sass */
 .close-trigger {
   position: absolute;
   top: 0;
@@ -1722,15 +1754,15 @@ a.btn-primary, a:visited.btn-primary {
   display: block;
   cursor: pointer; }
   @media only screen and (min-width: 770px) {
-    /* line 92, pages/contact.sass */
+    /* line 100, pages/contact.sass */
     .close-trigger {
       right: 30px;
       font-size: 5.376em; } }
 
-/* line 105, pages/contact.sass */
+/* line 113, pages/contact.sass */
 .t {
   margin-right: 15px; }
 
-/* line 107, pages/contact.sass */
+/* line 115, pages/contact.sass */
 .tf {
   margin-right: 5px; }

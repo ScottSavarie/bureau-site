@@ -22,6 +22,7 @@
 
 .header-video-wrapper
   @extend .video-wrapper
+  text-align: center
   @media only screen and (max-height: 750px) and (min-width: $first-break)
     width: 70%
     padding-bottom: 39%
@@ -47,6 +48,17 @@
   height: 100%
   img
     width: 100%
+
+.video-poster-header
+  width: 99%
+  @media only screen and (min-width: $second-break)
+    display: none
+
+#home-video--intro
+  display: none
+  @media only screen and (min-width: $second-break)
+    display: block
+
 
 
 .home-introtext

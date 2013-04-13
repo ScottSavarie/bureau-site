@@ -10,19 +10,6 @@ if(!Modernizr.svg) {
 
 
 
-/* =Delete video
-============================================================================== */
-
-$(document).ready(function() {
-    var width = $(window).width();
-    if (width <= 767) {
-      $(document).ready(function() {
-      $('#home-video--intro').remove();
-      }); 
-  }
-  else {
-  }   
-});
 
 
 
