@@ -10,9 +10,9 @@ Syntax error: Undefined variable: "$l-s".
 9:   padding: $l-s /2
 10:   text-overflow: ellipsis
 11:   overflow: hidden
-12:   .twitter-follow-button
-13:     margin-top: 0.2em
-14:     margin-right: 0.4em
+12:   +box-sizing(border-box)
+13:   .twitter-follow-button
+14:     margin-top: 0.2em
 
 Backtrace:
 /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass:9
@@ -108,4 +108,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass\A \A 4: .people\A 5:   display: inline-block\A 6:   vertical-align: top\A 7:   width: 100%\A 8:   box-sizing: border-box\A 9:   padding: $l-s /2\A 10:   text-overflow: ellipsis\A 11:   overflow: hidden\A 12:   .twitter-follow-button\A 13:     margin-top: 0.2em\A 14:     margin-right: 0.4em"; }
+  content: "Syntax error: Undefined variable: \"$l-s\".\A         on line 9 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/profile.sass\A \A 4: .people\A 5:   display: inline-block\A 6:   vertical-align: top\A 7:   width: 100%\A 8:   box-sizing: border-box\A 9:   padding: $l-s /2\A 10:   text-overflow: ellipsis\A 11:   overflow: hidden\A 12:   +box-sizing(border-box)\A 13:   .twitter-follow-button\A 14:     margin-top: 0.2em"; }

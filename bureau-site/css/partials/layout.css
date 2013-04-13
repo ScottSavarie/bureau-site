@@ -1,5 +1,5 @@
 /*
-Syntax error: Undefined variable: "$l-xxl".
+Syntax error: Undefined variable: "$l-l".
         on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/layout.sass
 
 3:   vertical-align: top
@@ -7,12 +7,12 @@ Syntax error: Undefined variable: "$l-xxl".
 5: 
 6: .l-module--spaced
 7:   @extend %l-module
-8:   padding: $l-xxl 0
-9: 
-10: .l-module--wide
-11:   @extend %l-module
-12:   padding: $l-xl 0
-13: 
+8:   padding: $l-l 0
+9:   @media only screen and (min-width: $second-break)
+10:     padding: $l-xxl 0
+11: 
+12: .l-module--wide
+13:   @extend %l-module
 
 Backtrace:
 /Users/scottsavarie/Sites/bureau-site/source/css/partials/layout.sass:8
@@ -110,4 +110,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-xxl\".\A         on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/layout.sass\A \A 3:   vertical-align: top\A 4:   overflow: hidden\A 5: \A 6: .l-module--spaced\A 7:   @extend %l-module\A 8:   padding: $l-xxl 0\A 9: \A 10: .l-module--wide\A 11:   @extend %l-module\A 12:   padding: $l-xl 0\A 13: "; }
+  content: "Syntax error: Undefined variable: \"$l-l\".\A         on line 8 of /Users/scottsavarie/Sites/bureau-site/source/css/partials/layout.sass\A \A 3:   vertical-align: top\A 4:   overflow: hidden\A 5: \A 6: .l-module--spaced\A 7:   @extend %l-module\A 8:   padding: $l-l 0\A 9:   @media only screen and (min-width: $second-break)\A 10:     padding: $l-xxl 0\A 11: \A 12: .l-module--wide\A 13:   @extend %l-module"; }

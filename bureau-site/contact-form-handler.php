@@ -3,11 +3,9 @@ $errors = '';
 $myemail = 'scottsavarie@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email'])||
-   empty($_POST['tel']) || 
-   empty($_POST['text']) || 
    empty($_POST['message']))
 {
-    $errors .= "\n Error: all fields are required";
+    $errors .= "\n Error: We need atleast your name, email, and a message.";
 }
 $name = $_POST['name'];
 $email_address = $_POST['email']; 

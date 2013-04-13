@@ -2,12 +2,12 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]> ><! <![endif]-->
+<!--[if gt IE 8]>  <![endif]-->
 <html class='no-js'>
   <!-- <![endif] -->
   <head>
+    <script src='js/modules/modernizr.custom.js'></script>
     <meta charset='utf-8'>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Bureau - Musagetes</title>
     <meta content='' name='description'>
@@ -23,13 +23,12 @@
         <div class='nav-bar'>
           <a class ="language" href ="#">Français</a>
           <a class="logo" href="index.html"><h1>Bureau</h1></a>
-          <div class='nav-btn'>
+          <div class='nav-btn' id='navtoggle'>
             <span class='nav-icon'></span>
             <span class='nav-icon'></span>
             <span class='nav-icon'></span>
           </div>
         </div>
-        <input type="checkbox" id="toggle">
         <div class='nav-container'>
           <ul class='nav-links'>
             <li>
@@ -42,7 +41,7 @@
               <a class="page-services__link" href="services.html">Services</a>
             </li>
             <li>
-              <a class="page-blog__link" href="#">Blog</a>
+              <a class="page-blog__link" href="blog.html">Blog</a>
             </li>
             <li>
               <a class="page-contact__link" href="#contact-wrap" >Contact</a>
@@ -78,16 +77,19 @@
     <section class='l-module--spaced' id='contact-wrap'>
   <div class='l-container--narrow contact-bg'>
     <h1 class='header--grey txt-center'>Get in touch</h1>
-    <form action='contact-form-handler.php' id='contact-form' method='post'>
+    <form action='contact-form-handler.php' data-error-container='#contactform-errors' data-validate='parsley' id='contact-form' method='post' novalidate=''>
       <fieldset>
-        <input class='input-field' name='name' placeholder='Your full name' type='name'>
-        <input class='input-field' name='email' placeholder='Your email address' type='email'>
+        <input class='input-field' data-error-message='We need your name!' name='name' placeholder='Your full name' required='required' type='name'>
+        <input class='input-field' data-error-message="Hey, what's with your email?" name='email' placeholder='Your email address' required='required' type='email'>
         <input class='input-field' name='tel' placeholder='Your phone number' type='tel'>
         <input class='input-field' name='text' placeholder='Your company' type='text'>
-        <textarea class='input-field--message' name='message' placeholder='Tell us more…'></textarea>
+        <textarea class='input-field--message' data-error-message='You gotta tell us something!' name='message' placeholder='Tell us more…' required='required'></textarea>
         <input class='btn-primary' id='submit' name='submit' type='submit' value='Submit'>
       </fieldset>
     </form>
+    <div class='contact-details-container'>
+      <div id='contactform-errors'></div>
+    </div>
     <div class='contact-details-container'>
       <a class='contact-map' href='http://goo.gl/maps/fLbOM' target='blank'>
         <div class='contact-pin-wrap'>
@@ -192,15 +194,15 @@
         </div>
         <div class='contact-info'>
           <address>
-            <span class="txt-bold">Bureau</span> <a class="grey-link" href="http://goo.gl/maps/fLbOM" target="blank">170 Elgin St. Sudbury Ontario P3E 3N5</a><div class="tel-email"><span class="footer-tel">705 586 3189</span><a href="mailto:hello@bureau.ca">hello@bureau.ca</a></div>
+            <span class="txt-bold">Bureau</span> <a class="grey-link" href="http://goo.gl/maps/fLbOM" target="blank">Elgin St., Sudbury Ontario P3E 3N5</a><div class="tel-email"><span class="footer-tel">705 586 3189</span><a href="mailto:hello@bureau.ca">hello@bureau.ca</a></div>
           </address>
         </div>
       </div>
     </footer>
     <script src='js/modules/jquery-1.8.3.min.js'></script>
     <script src='js/modules/log-polyfill.js'></script>
-    <script src='js/modules/modernizr.custom.js'></script>
     <script src='js/modules/placeholder.js'></script>
+    <script src='js/modules/parsley.js'></script>
     <script src='js/modules/respond.min.js'></script>
     <script src='js/modules/ss-social.js'></script>
     <script src='js/main.js'></script>

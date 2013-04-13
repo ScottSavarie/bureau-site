@@ -11,6 +11,39 @@ if(!Modernizr.svg) {
 
 
 
+/* =Navivgation toggle
+============================================================================== */
+
+$(document).ready(function() {
+    var width = $(window).width();
+    if (width <= 767) {
+      $(document).ready(function() {
+      $('.nav-container').addClass("nav-hidden");
+      }); 
+  }
+  else {
+  }   
+});
+
+
+$(window).resize(function() {
+    var width = $(window).width();
+    if (width <= 767) {
+      $(document).ready(function() {
+      $('.nav-container').addClass("nav-hidden");
+      }); 
+  }
+  else {
+    $('.nav-container').removeClass("nav-hidden");
+  }   
+});
+
+
+$("#navtoggle").click(function(){
+    $(".nav-container").toggleClass("nav-visible");
+});
+
+
 /* =Contact Slide Down
 ============================================================================== */
 
