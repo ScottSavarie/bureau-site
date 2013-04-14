@@ -256,22 +256,21 @@
             <span>From the blog</span>
           </a>
         </h1>
-        <a class='blog-teaser-link' href='#'>
-          <article class='blog-teaser'>
-          <?php
-          $request_url = 'http://finlay.tumblr.com/api/read?type=post&start=0&num=1';
-          $xml = simplexml_load_file($request_url);
-          $title = $xml->posts->post->{'regular-title'};
-          $post = $xml->posts->post->{'regular-body'};
-          $link = $xml->posts->post['url'];
-          $small_post = substr($post,0,320);
-          echo '<h1>'.$title.'</h1>';
-          echo '<p>'.$small_post.'</p>';
-          echo "…";
-          echo "</br><a target=frame2 href='".$link."'>Read More</a>"; 
-          ?>
-          </article>
-        </a>
+           <?php
+            $request_url = 'http://finlay.tumblr.com/api/read?type=post&start=0&num=1';
+            $xml = simplexml_load_file($request_url);
+            $title = $xml->posts->post->{'regular-title'};
+            $post = $xml->posts->post->{'regular-body'};
+            $link = $xml->posts->post['url'];
+            $small_post = substr($post,0,320);
+            echo '<a class="blog-teaser-link" href='.$link.'>';
+            echo '<article class="blog-teaser">';
+            echo '<h2 class="header--red">'.$title.'</h2>';
+            echo '<p>'.$small_post.'</p>';
+            echo '</article>';
+            echo '</a>';
+            ?>
+
         <a class='blog-teaser-link' href='#'>
           <article class='blog-teaser'>
             <h2 class='header--red'>Redefining user experience</h2>
