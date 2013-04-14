@@ -9,10 +9,34 @@ if(!Modernizr.svg) {
     });
 }
 
+/* =load home video
+============================================================================== */
+$(document).ready(function() {
+    var width = $(window).width();
+    if (width >= 767) {
+      $(document).ready(function() {
+        $("#video-loader").html(
+        '<video webkit-playsinline id="home-video--intro"class="home-video--intro" width="1368" height="769" autoplay="autoplay" poster="img/video-poster2.jpg" loop="true"><source src="videos/Bureau_homepage.mp4" type="video/mp4" /><source src="videos/Bureau_homepage.oggtheora.ogg" type="video/ogg"/><source src="videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>'
+        );
+      });
+  }
+  else {
+    }   
+});
 
-
-
-
+$(window).resize(function() {
+    var width = $(window).width();
+    if (width >= 767) {
+      $(document).ready(function() {
+        $("#video-loader").html(
+        '<video webkit-playsinline id="home-video--intro"class="home-video--intro" width="1368" height="769" autoplay="autoplay" poster="img/video-poster2.jpg" loop="true"><source src="videos/Bureau_homepage.mp4" type="video/mp4" /><source src="videos/Bureau_homepage.oggtheora.ogg" type="video/ogg"/><source src="videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>'
+        );
+      });
+  }
+  else {
+    $("#video-loader video").remove()
+    }   
+});
 
 
 
@@ -41,7 +65,7 @@ $(window).resize(function() {
       }); 
   }
   else {
-    $('.nav-container').removeClass("nav-hidden");
+    
   }   
 });
 

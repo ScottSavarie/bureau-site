@@ -64,7 +64,7 @@ $(window).resize(function() {
       }); 
   }
   else {
-    $('.nav-container').removeClass("nav-hidden");
+    
   }   
 });
 

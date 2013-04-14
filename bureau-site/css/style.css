@@ -517,8 +517,20 @@ a.logo, a.logo:visited {
   max-height: 0px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
+  @media only screen and (min-width: 770px) {
+    /* line 156, partials/navigation.sass */
+    .nav-hidden {
+      max-height: auto;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; } }
 
-/* line 160, partials/navigation.sass */
+/* line 164, partials/navigation.sass */
+.no-js .nav-hidden {
+  max-height: 1000px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
+/* line 169, partials/navigation.sass */
 .nav-visible {
   max-height: 1000px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -952,20 +964,16 @@ a.btn-primary, a:visited.btn-primary {
 /* line 52, pages/home.sass */
 .video-poster-header {
   width: 99%; }
-  @media only screen and (min-width: 770px) {
-    /* line 52, pages/home.sass */
-    .video-poster-header {
-      display: none; } }
 
-/* line 57, pages/home.sass */
+/* line 56, pages/home.sass */
 #home-video--intro {
   display: none; }
   @media only screen and (min-width: 770px) {
-    /* line 57, pages/home.sass */
+    /* line 56, pages/home.sass */
     #home-video--intro {
       display: block; } }
 
-/* line 64, pages/home.sass */
+/* line 63, pages/home.sass */
 .home-introtext {
   width: 100%;
   position: relative;
@@ -976,31 +984,31 @@ a.btn-primary, a:visited.btn-primary {
   color: #7c7c7c;
   background: white; }
   @media only screen and (min-width: 820px) {
-    /* line 64, pages/home.sass */
+    /* line 63, pages/home.sass */
     .home-introtext {
       font-size: 1.5em;
       line-height: 1.4;
       width: 75%; } }
   @media only screen and (max-height: 750px) and (min-width: 580px) {
-    /* line 64, pages/home.sass */
+    /* line 63, pages/home.sass */
     .home-introtext {
       margin-top: -15%; } }
 
-/* line 79, pages/home.sass */
+/* line 78, pages/home.sass */
 .arrow-wrap {
   text-align: center; }
 
-/* line 82, pages/home.sass */
+/* line 81, pages/home.sass */
 .home-arrow {
   margin-top: 5%;
   display: block;
   cursor: pointer; }
-  /* line 86, pages/home.sass */
+  /* line 85, pages/home.sass */
   .home-arrow:hover, .home-arrow:focus {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
     opacity: 0.9; }
 
-/* line 95, pages/home.sass */
+/* line 94, pages/home.sass */
 #specialty-one {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.2s;
@@ -1008,7 +1016,7 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.2s;
   transition: opacity 0.4s ease-out 0.2s; }
 
-/* line 98, pages/home.sass */
+/* line 97, pages/home.sass */
 #specialty-two {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.4s;
@@ -1016,7 +1024,7 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.4s;
   transition: opacity 0.4s ease-out 0.4s; }
 
-/* line 101, pages/home.sass */
+/* line 100, pages/home.sass */
 #specialty-three {
   -webkit-transition: opacity 0.4s ease-out;
   -webkit-transition-delay: 0.6s;
@@ -1024,45 +1032,45 @@ a.btn-primary, a:visited.btn-primary {
   -o-transition: opacity 0.4s ease-out 0.6s;
   transition: opacity 0.4s ease-out 0.6s; }
 
-/* line 104, pages/home.sass */
+/* line 103, pages/home.sass */
 .hidden {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   visibility: hidden; }
 
-/* line 108, pages/home.sass */
+/* line 107, pages/home.sass */
 .visible {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   visibility: visible; }
 
-/* line 112, pages/home.sass */
+/* line 111, pages/home.sass */
 .specialty {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   position: relative;
   margin-top: 1.64681em; }
-  /* line 118, pages/home.sass */
+  /* line 117, pages/home.sass */
   .specialty h2, .specialty p {
     text-align: left; }
-  /* line 120, pages/home.sass */
+  /* line 119, pages/home.sass */
   .specialty h2 {
     margin-top: 2.47022em; }
-  /* line 122, pages/home.sass */
+  /* line 121, pages/home.sass */
   .specialty img {
     position: relative;
     z-index: 10; }
   @media only screen and (min-width: 580px) {
-    /* line 112, pages/home.sass */
+    /* line 111, pages/home.sass */
     .specialty {
       width: 80%; } }
   @media only screen and (min-width: 770px) {
-    /* line 112, pages/home.sass */
+    /* line 111, pages/home.sass */
     .specialty {
       width: 70%; } }
   @media only screen and (min-width: 960px) {
-    /* line 112, pages/home.sass */
+    /* line 111, pages/home.sass */
     .specialty {
       width: 28%;
       display: -moz-inline-stack;
@@ -1073,17 +1081,17 @@ a.btn-primary, a:visited.btn-primary {
       *display: inline;
       vertical-align: top;
       margin-right: 5%; }
-      /* line 135, pages/home.sass */
+      /* line 134, pages/home.sass */
       .specialty:last-child {
         margin-right: 0; } }
 
-/* line 138, pages/home.sass */
+/* line 137, pages/home.sass */
 .dotted-arrow {
   height: 195px;
   width: 14px;
   margin: 0 auto; }
   @media only screen and (min-width: 960px) {
-    /* line 138, pages/home.sass */
+    /* line 137, pages/home.sass */
     .dotted-arrow {
       height: 14px;
       width: 195px;
@@ -1092,27 +1100,27 @@ a.btn-primary, a:visited.btn-primary {
       left: 64%;
       z-index: 0; } }
   @media only screen and (min-width: 1160px) {
-    /* line 138, pages/home.sass */
+    /* line 137, pages/home.sass */
     .dotted-arrow {
       left: 82%; } }
 
-/* line 155, pages/home.sass */
+/* line 154, pages/home.sass */
 .svg .dotted-arrow {
   background: url(../img/dotted-arrow-vert.svg) no-repeat; }
   @media only screen and (min-width: 960px) {
-    /* line 155, pages/home.sass */
+    /* line 154, pages/home.sass */
     .svg .dotted-arrow {
       background: url(../img/dotted-arrow.svg) no-repeat; } }
 
-/* line 161, pages/home.sass */
+/* line 160, pages/home.sass */
 .no-svg .dotted-arrow {
   background: url(../img/dotted-arrow-vert.png) no-repeat; }
   @media only screen and (min-width: 960px) {
-    /* line 161, pages/home.sass */
+    /* line 160, pages/home.sass */
     .no-svg .dotted-arrow {
       background: url(../img/dotted-arrow.png) no-repeat; } }
 
-/* line 170, pages/home.sass */
+/* line 169, pages/home.sass */
 #videotrigger {
   width: 100%;
   padding-bottom: 56.25%;
