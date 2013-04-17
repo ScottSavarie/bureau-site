@@ -10,3 +10,4 @@ echo '<p>'.$small_post.'</p>';
 echo "…";
 echo "</br><a target=frame2 href='".$link."'>Read More</a>"; 
 ?>
+

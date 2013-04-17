@@ -1565,36 +1565,66 @@ a.btn-primary, a:visited.btn-primary {
       *vertical-align: auto;
       zoom: 1;
       *display: inline;
+      vertical-align: top;
       margin-top: 0; } }
   @media only screen and (min-width: 960px) {
     /* line 6, pages/blog.sass */
     .blog-module a.blog-teaser-link {
       width: 42%;
       padding: 2.5%; } }
-  /* line 23, pages/blog.sass */
+  /* line 24, pages/blog.sass */
   .blog-module a.blog-teaser-link:hover, .blog-module a.blog-teaser-link:focus {
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2); }
-  /* line 25, pages/blog.sass */
+  /* line 26, pages/blog.sass */
   .blog-module a.blog-teaser-link:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     top: 1px; }
-/* line 30, pages/blog.sass */
+/* line 31, pages/blog.sass */
 .blog-module .blog-date {
   line-height: 2;
   color: #7c7c7c;
   font-weight: 200; }
-/* line 34, pages/blog.sass */
+/* line 35, pages/blog.sass */
 .blog-module p {
   margin-top: 0.82341em; }
 
-/* line 37, pages/blog.sass */
+/* line 38, pages/blog.sass */
 .blog-embed {
   width: 100%;
   height: 100%; }
+
+/* line 44, pages/blog.sass */
+#tumblrfeed h1, #tumblrfeed h2, #tumblrfeed h3, #tumblrfeed h4, #tumblrfeed h5, #tumblrfeed h6, #tumblrfeed ul, #tumblrfeed blockquote, #tumblrfeed img, #tumblrfeed iframe, #tumblrfeed br, #tumblrfeed video, #tumblrfeed audio {
+  display: none; }
+/* line 46, pages/blog.sass */
+#tumblrfeed h2.header--red {
+  display: block !important; }
+/* line 48, pages/blog.sass */
+#tumblrfeed p:nth-child(2n+1) {
+  display: none; }
+/* line 50, pages/blog.sass */
+#tumblrfeed .blog-teaser {
+  height: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  /* line 54, pages/blog.sass */
+  #tumblrfeed .blog-teaser:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(88%, #ffffff));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /* line 1, pages/project-crosslink.sass */
 .project-crosslink {

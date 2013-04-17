@@ -41,5 +41,22 @@
 
 
 #tumblrfeed
+  h1, h2, h3, h4, h5, h6, ul, blockquote, img, iframe, br, video, audio
+    display: none
+  h2.header--red
+    display: block !important  
   p:nth-child(2n+1)
     display: none
+  .blog-teaser
+    height: 10em
+    overflow: hidden
+    text-overflow: ellipsis
+    &:after
+      +background-image(linear-gradient(top, rgba(#fff,0) 20%, rgba(#fff,1) 88%))
+      content: ""
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 100%
