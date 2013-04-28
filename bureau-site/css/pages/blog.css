@@ -9,8 +9,8 @@ Syntax error: Undefined variable: "$l-l".
 5:   @media only screen and (min-width: $third-break)
 6:     margin-bottom: 0
 7: 
-8:   section
-9:     margin-top: $l-m
+8:   h1
+9:     font-size: 1.5em
 
 Backtrace:
 /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass:4
@@ -104,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$l-l\".\A         on line 4 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass\A \A 1: // TUMBLR STYLING\A 2: \A 3: #posts\A 4:   margin-bottom: $l-l\A 5:   @media only screen and (min-width: $third-break)\A 6:     margin-bottom: 0\A 7: \A 8:   section\A 9:     margin-top: $l-m"; }
+  content: "Syntax error: Undefined variable: \"$l-l\".\A         on line 4 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass\A \A 1: // TUMBLR STYLING\A 2: \A 3: #posts\A 4:   margin-bottom: $l-l\A 5:   @media only screen and (min-width: $third-break)\A 6:     margin-bottom: 0\A 7: \A 8:   h1\A 9:     font-size: 1.5em"; }

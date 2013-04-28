@@ -28,13 +28,13 @@
     margin-top: 3em  
     margin-bottom: 0     
 
-.fb_ltr, .fb_rtl, .facebook
-  width: 100% !important
-
-.fb_iframe_widget 
-  width: 100% !important
-  span
+  .fb_ltr, .fb_rtl, .facebook
     width: 100% !important
+
+  .fb_iframe_widget 
+    width: 100% !important
+    span
+      width: 100% !important
 
 
 
@@ -165,12 +165,8 @@
 
 
 #tumblrfeed
-  h1, h2, h3, h4, h5, h6, ul, blockquote, img, iframe, br, video, audio
-    display: none
-  h2.header--red
-    display: block !important  
-  p:nth-child(2n+1)
-    display: none
+  // p:nth-child(2n+1)
+  //   display: none
   .blog-teaser
     height: 10em
     overflow: hidden
@@ -184,3 +180,8 @@
       left: 0
       width: 100%
       height: 100%
+    h1, h2, h3, h4, h5, h6, ul, blockquote, img, iframe, br, video, audio
+      display: none
+    h2.header--red
+      display: block !important  
+
