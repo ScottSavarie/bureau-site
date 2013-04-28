@@ -252,7 +252,7 @@ p {
   font-size: 1.5em;
   margin: 0;
   padding-bottom: 0.25em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 26, partials/typography.sass */
     .header--grey, .header--white {
       font-size: 2.688em; } }
@@ -278,7 +278,7 @@ p {
   font-weight: 200;
   font-size: 1.118em;
   color: #7c7c7c; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 47, partials/typography.sass */
     .intro-subhead {
       font-size: 1.5em;
@@ -346,7 +346,7 @@ a.logo, a.logo:visited {
   /* line 48, partials/navigation.sass */
   a.logo h1, a.logo:visited h1 {
     font-size: 1.875em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 43, partials/navigation.sass */
     a.logo, a.logo:visited {
       width: 300px; } }
@@ -360,7 +360,7 @@ a.logo, a.logo:visited {
   width: 100%;
   display: block;
   overflow: hidden; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 55, partials/navigation.sass */
     .nav-bar {
       display: initial;
@@ -390,7 +390,7 @@ a.logo, a.logo:visited {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 76, partials/navigation.sass */
     .nav-container {
       float: left;
@@ -410,7 +410,7 @@ a.logo, a.logo:visited {
   position: relative;
   padding: 1em 0; }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
   /* line 92, partials/navigation.sass */
   .nav-links {
     float: left; } }
@@ -432,7 +432,7 @@ a.logo, a.logo:visited {
     /* line 104, partials/navigation.sass */
     .nav-links li a:hover, .nav-links li a:focus, .nav-links li a:visited:hover, .nav-links li a:visited:focus {
       color: #bc2f33; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 95, partials/navigation.sass */
     .nav-links li {
       display: -moz-inline-stack;
@@ -472,7 +472,7 @@ a.logo, a.logo:visited {
       /* line 125, partials/navigation.sass */
       .nav-social li a:hover, .nav-social li a:focus, .nav-social li a:visited:hover, .nav-social li a:visited:focus {
         color: #bc2f33; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 113, partials/navigation.sass */
     .nav-social {
       float: right;
@@ -493,7 +493,7 @@ a.logo, a.logo:visited {
   float: right;
   margin-top: 1.5em;
   cursor: pointer; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 133, partials/navigation.sass */
     .nav-btn {
       display: none; } }
@@ -508,7 +508,7 @@ a.logo, a.logo:visited {
     .nav-btn .nav-icon:first-child {
       margin-top: 0; }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 767px) {
   /* line 152, partials/navigation.sass */
   #navtoggle {
     display: none; } }
@@ -518,7 +518,7 @@ a.logo, a.logo:visited {
   max-height: 0px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 157, partials/navigation.sass */
     .nav-hidden {
       max-height: auto;
@@ -546,7 +546,7 @@ a.logo, a.logo:visited {
 /* line 6, partials/layout.sass */
 .l-module--spaced {
   padding: 2.05852em 0; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 6, partials/layout.sass */
     .l-module--spaced {
       padding: 4.94044em 0; } }
@@ -554,7 +554,7 @@ a.logo, a.logo:visited {
 /* line 12, partials/layout.sass */
 .l-module--wide {
   padding: 1.64681em 0; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 12, partials/layout.sass */
     .l-module--wide {
       padding: 2.47022em 0; } }
@@ -574,7 +574,7 @@ a.logo, a.logo:visited {
 /* line 31, partials/layout.sass */
 .l-container--wide, .l-container--narrow {
   padding: 0.82341em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 31, partials/layout.sass */
     .l-container--wide, .l-container--narrow {
       padding: 2.05852em; } }
@@ -591,7 +591,7 @@ a.logo, a.logo:visited {
 .l-container--full {
   width: 100%;
   max-width: 90%; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 44, partials/layout.sass */
     .l-container--full {
       max-width: 90%; } }
@@ -611,7 +611,7 @@ a.logo, a.logo:visited {
 /* line 59, partials/layout.sass */
 .two-thirds {
   width: 100%; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 59, partials/layout.sass */
     .two-thirds {
       width: 60%; } }
@@ -619,7 +619,7 @@ a.logo, a.logo:visited {
 /* line 64, partials/layout.sass */
 .one-third {
   width: 100%; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 64, partials/layout.sass */
     .one-third {
       width: 30%; } }
@@ -781,7 +781,7 @@ input.input-field, .input-field--message {
 /* line 17, partials/ui.sass */
 form {
   font-size: 0.75em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 17, partials/ui.sass */
     form {
       font-size: inherit; } }
@@ -793,7 +793,7 @@ form {
 /* line 25, partials/ui.sass */
 .parsley-error-list {
   color: #bc2f33; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 25, partials/ui.sass */
     .parsley-error-list {
       font-size: 1.5em; } }
@@ -819,7 +819,7 @@ form {
       padding: 0.54894em 0.54894em 3em 0.54894em;
       margin: 0.4117em 0;
       padding-bottom: 6em; }
-      @media only screen and (min-width: 770px) {
+      @media only screen and (min-width: 767px) {
         /* line 42, partials/ui.sass */
         #contact-form fieldset .input-field--message, #worksheet-form fieldset .input-field--message {
           padding: 0.82341em 0.82341em 6em 0.82341em;
@@ -836,7 +836,7 @@ form {
       width: 100%;
       padding: 0.54894em;
       margin: 0.4117em 0; }
-      @media only screen and (min-width: 770px) {
+      @media only screen and (min-width: 767px) {
         /* line 54, partials/ui.sass */
         #contact-form fieldset .input-field, #worksheet-form fieldset .input-field {
           padding: 0.82341em;
@@ -848,7 +848,7 @@ form {
     #contact-form fieldset .btn-primary, #worksheet-form fieldset .btn-primary {
       width: 100%;
       margin: 0.54894em 0; }
-      @media only screen and (min-width: 770px) {
+      @media only screen and (min-width: 767px) {
         /* line 67, partials/ui.sass */
         #contact-form fieldset .btn-primary, #worksheet-form fieldset .btn-primary {
           width: 95%;
@@ -858,7 +858,7 @@ form {
 #worksheet-form fieldset .btn-primary {
   width: 100%;
   margin: 0.54894em 0; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 77, partials/ui.sass */
     #worksheet-form fieldset .btn-primary {
       width: 25%;
@@ -907,7 +907,7 @@ a.btn-primary, a:visited.btn-primary {
 /* line 5, pages/home.sass */
 #header-cover {
   min-height: 350px; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 5, pages/home.sass */
     #header-cover {
       min-height: 800px;
@@ -930,7 +930,7 @@ a.btn-primary, a:visited.btn-primary {
 /* line 23, pages/home.sass */
 .header-video-wrapper {
   text-align: center; }
-  @media only screen and (max-height: 750px) and (min-width: 580px) {
+  @media only screen and (max-height: 700px) and (min-width: 580px) {
     /* line 23, pages/home.sass */
     .header-video-wrapper {
       width: 70%;
@@ -969,7 +969,7 @@ a.btn-primary, a:visited.btn-primary {
 /* line 56, pages/home.sass */
 #home-video--intro {
   display: none; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 56, pages/home.sass */
     #home-video--intro {
       display: block; } }
@@ -984,13 +984,13 @@ a.btn-primary, a:visited.btn-primary {
   font-size: 1.118em;
   color: #7c7c7c;
   background: white; }
-  @media only screen and (min-width: 820px) {
+  @media only screen and (min-width: 817px) {
     /* line 63, pages/home.sass */
     .home-introtext {
       font-size: 1.5em;
       line-height: 1.4;
       width: 75%; } }
-  @media only screen and (max-height: 750px) and (min-width: 580px) {
+  @media only screen and (max-height: 700px) and (min-width: 580px) {
     /* line 63, pages/home.sass */
     .home-introtext {
       margin-top: -15%; } }
@@ -1066,7 +1066,7 @@ a.btn-primary, a:visited.btn-primary {
     /* line 111, pages/home.sass */
     .specialty {
       width: 80%; } }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 111, pages/home.sass */
     .specialty {
       width: 70%; } }
@@ -1295,7 +1295,7 @@ a.btn-primary, a:visited.btn-primary {
   width: 95%;
   padding: 1em;
   margin: 0.4117em 0; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 20, pages/worksheet.sass */
     .working-with {
       width: 61%;
@@ -1405,7 +1405,7 @@ a.btn-primary, a:visited.btn-primary {
         width: 100%;
         margin-right: 0;
         margin-bottom: 0.82341em; } }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 4, pages/profile.sass */
     .people {
       width: 32%; } }
@@ -1445,7 +1445,7 @@ a.btn-primary, a:visited.btn-primary {
   /* line 73, pages/profile.sass */
   .manifesto-list i {
     display: block; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 68, pages/profile.sass */
     .manifesto-list {
       font-size: 1.5em; } }
@@ -1459,7 +1459,7 @@ a.btn-primary, a:visited.btn-primary {
   margin: 0 0 1.64681em 1.64681em;
   list-style: none;
   padding-left: 1.64681em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 80, pages/profile.sass */
     .manifesto-list > li {
       padding-left: 2.05852em; } }
@@ -1481,7 +1481,7 @@ a.btn-primary, a:visited.btn-primary {
   font-weight: 700;
   width: 2.8em;
   height: 2.8em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 88, pages/profile.sass */
     .manifesto-list > li:before {
       top: 7px; } }
@@ -1532,16 +1532,53 @@ a.btn-primary, a:visited.btn-primary {
   /* line 28, pages/services.sass */
   .services-note p {
     margin-bottom: 0; }
-    @media only screen and (min-width: 770px) {
+    @media only screen and (min-width: 767px) {
       /* line 28, pages/services.sass */
       .services-note p {
         width: 80%; } }
 
+/* line 3, pages/blog.sass */
+#posts {
+  margin-bottom: 2.05852em; }
+  @media only screen and (min-width: 960px) {
+    /* line 3, pages/blog.sass */
+    #posts {
+      margin-bottom: 0; } }
+  /* line 8, pages/blog.sass */
+  #posts section {
+    margin-top: 1.64681em;
+    margin-bottom: 1.64681em;
+    padding-bottom: 1.64681em; }
+  /* line 13, pages/blog.sass */
+  #posts li:last-child {
+    border-bottom: none !important; }
+
+/* line 16, pages/blog.sass */
+.blog-sidebar {
+  padding: 0.82341em;
+  box-sizing: border-box; }
+
+/* line 20, pages/blog.sass */
+.fb_ltr, .fb_rtl, .facebook {
+  width: 100% !important; }
+
+/* line 23, pages/blog.sass */
+.fb_iframe_widget {
+  width: 100% !important; }
+  /* line 25, pages/blog.sass */
+  .fb_iframe_widget span {
+    width: 100% !important; }
+
+/* line 28, pages/blog.sass */
+._4s7c {
+  border: 2px solid #7c7c7c !important;
+  box-sizing: border-box !important; }
+
 @media only screen and (min-width: 580px) {
-  /* line 2, pages/blog.sass */
+  /* line 35, pages/blog.sass */
   .blog-module h1 {
     margin-bottom: 0.32341em; } }
-/* line 6, pages/blog.sass */
+/* line 39, pages/blog.sass */
 .blog-module a.blog-teaser-link {
   width: 85%;
   padding: 7%;
@@ -1554,7 +1591,7 @@ a.btn-primary, a:visited.btn-primary {
   display: block;
   position: relative; }
   @media only screen and (min-width: 580px) {
-    /* line 6, pages/blog.sass */
+    /* line 39, pages/blog.sass */
     .blog-module a.blog-teaser-link {
       width: 39%;
       margin: 1%;
@@ -1568,50 +1605,50 @@ a.btn-primary, a:visited.btn-primary {
       vertical-align: top;
       margin-top: 0; } }
   @media only screen and (min-width: 960px) {
-    /* line 6, pages/blog.sass */
+    /* line 39, pages/blog.sass */
     .blog-module a.blog-teaser-link {
       width: 42%;
       padding: 2.5%; } }
-  /* line 24, pages/blog.sass */
+  /* line 57, pages/blog.sass */
   .blog-module a.blog-teaser-link:hover, .blog-module a.blog-teaser-link:focus {
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2); }
-  /* line 26, pages/blog.sass */
+  /* line 59, pages/blog.sass */
   .blog-module a.blog-teaser-link:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     top: 1px; }
-/* line 31, pages/blog.sass */
+/* line 64, pages/blog.sass */
 .blog-module .blog-date {
   line-height: 2;
   color: #7c7c7c;
   font-weight: 200; }
-/* line 35, pages/blog.sass */
+/* line 68, pages/blog.sass */
 .blog-module p {
   margin-top: 0.82341em; }
 
-/* line 38, pages/blog.sass */
+/* line 71, pages/blog.sass */
 .blog-embed {
   width: 100%;
   height: 100%; }
 
-/* line 44, pages/blog.sass */
+/* line 77, pages/blog.sass */
 #tumblrfeed h1, #tumblrfeed h2, #tumblrfeed h3, #tumblrfeed h4, #tumblrfeed h5, #tumblrfeed h6, #tumblrfeed ul, #tumblrfeed blockquote, #tumblrfeed img, #tumblrfeed iframe, #tumblrfeed br, #tumblrfeed video, #tumblrfeed audio {
   display: none; }
-/* line 46, pages/blog.sass */
+/* line 79, pages/blog.sass */
 #tumblrfeed h2.header--red {
   display: block !important; }
-/* line 48, pages/blog.sass */
+/* line 81, pages/blog.sass */
 #tumblrfeed p:nth-child(2n+1) {
   display: none; }
-/* line 50, pages/blog.sass */
+/* line 83, pages/blog.sass */
 #tumblrfeed .blog-teaser {
   height: 10em;
   overflow: hidden;
   text-overflow: ellipsis; }
-  /* line 54, pages/blog.sass */
+  /* line 87, pages/blog.sass */
   #tumblrfeed .blog-teaser:after {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(88%, #ffffff));
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
@@ -1653,7 +1690,7 @@ a.btn-primary, a:visited.btn-primary {
       -moz-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
       box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.3);
       background-color: #a82a2d; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 1, pages/project-crosslink.sass */
     .project-crosslink {
       font-size: 2.688em; } }
@@ -1679,7 +1716,7 @@ a.btn-primary, a:visited.btn-primary {
 .contact-list {
   line-height: 1.625em;
   font-weight: 200; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 18, pages/contact.sass */
     .contact-list {
       float: left; } }
@@ -1691,7 +1728,7 @@ a.btn-primary, a:visited.btn-primary {
   padding-top: 2em;
   color: #5f6163 !important;
   display: block; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 24, pages/contact.sass */
     .contact-map {
       float: right;
@@ -1717,7 +1754,7 @@ a.btn-primary, a:visited.btn-primary {
     /* line 41, pages/contact.sass */
     .contact-pin-wrap {
       left: 5%; } }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 41, pages/contact.sass */
     .contact-pin-wrap {
       left: 14%;
@@ -1736,7 +1773,7 @@ a.btn-primary, a:visited.btn-primary {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 52, pages/contact.sass */
     .contact-pin {
       width: 280px; } }
@@ -1763,7 +1800,7 @@ a.btn-primary, a:visited.btn-primary {
   line-height: 1.3;
   font-size: 0.875em;
   padding-bottom: 0.5em; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 77, pages/contact.sass */
     .bureau-address {
       font-size: inherit;
@@ -1792,7 +1829,7 @@ a.btn-primary, a:visited.btn-primary {
   font-weight: 100;
   display: block;
   cursor: pointer; }
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 767px) {
     /* line 100, pages/contact.sass */
     .close-trigger {
       right: 30px;

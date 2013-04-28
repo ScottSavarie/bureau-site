@@ -1,35 +1,22 @@
 /*
-Syntax error: Undefined variable: "$first-break".
-        on line 3 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass
+Syntax error: Undefined variable: "$l-l".
+        on line 4 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass
 
-1: .blog-module
-2:   h1
-3:     @media only screen and (min-width: $first-break)
-4:       margin-bottom: $l-s - .5
-5:   
-6:   a.blog-teaser-link
-7:     width: 85%
-8:     padding: 7%
+1: // TUMBLR STYLING
+2: 
+3: #posts
+4:   margin-bottom: $l-l
+5:   @media only screen and (min-width: $third-break)
+6:     margin-bottom: 0
+7: 
+8:   section
+9:     margin-top: $l-m
 
 Backtrace:
-/Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass:3
+/Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass:4
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/variable.rb:49:in `_perform'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/script/node.rb:40:in `perform'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:398:in `block in run_interp_no_strip'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:396:in `map'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:396:in `run_interp_no_strip'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:406:in `run_interp'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:360:in `visit_media'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `map'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:37:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /usr/local/rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.6/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -117,4 +104,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$first-break\".\A         on line 3 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass\A \A 1: .blog-module\A 2:   h1\A 3:     @media only screen and (min-width: $first-break)\A 4:       margin-bottom: $l-s - .5\A 5:   \A 6:   a.blog-teaser-link\A 7:     width: 85%\A 8:     padding: 7%"; }
+  content: "Syntax error: Undefined variable: \"$l-l\".\A         on line 4 of /Users/scottsavarie/Sites/bureau-site/source/css/pages/blog.sass\A \A 1: // TUMBLR STYLING\A 2: \A 3: #posts\A 4:   margin-bottom: $l-l\A 5:   @media only screen and (min-width: $third-break)\A 6:     margin-bottom: 0\A 7: \A 8:   section\A 9:     margin-top: $l-m"; }

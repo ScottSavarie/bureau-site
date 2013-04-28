@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> 
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]> 
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]> 
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]>  <![endif]-->
+         <html class='no-js'>
+            <!-- <![endif] -->
+            <head>
+               <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/modernizr.custom.js'></script>
+               <meta content='' name='description'>
+               <meta content='width=device-width' name='viewport'>
+               <meta content='yes' name='apple-mobile-web-app-capable'>
+               <meta content='yes' name='apple-touch-fullscreen'>
+               <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+               <link href='http://www.scottsavarie.ca/bureau-site/css/style.css' rel='stylesheet'>
+               <link href='http://www.scottsavarie.ca/bureau-site/webfonts/ss-social.css' rel='stylesheet'>
+               <meta charset="utf-8">
+               <meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}" />
+               <meta name="color:Accent" content="#4EA3D0"/>
+               <meta name="font:Body" content="'Helvetica Neue', Helvetica, Arial, sans-serif"/>
+               <meta name="if:Two column posts" content="1"/>
+               <!-- Appearance option -->
+               <meta name="if:Show bar on top" content="1"/>
+               <meta name="if:Show blog title" content="1"/>
+               <meta name="if:Show blog description" content="1"/>
+               <meta name="if:Show profile photo" content="1"/>
+               <meta name="if:Use endless scrolling" content="1"/>
+               <meta name="if:Show right column" content="1"/>
+               <meta name="if:Place timestamp in left column" content="1"/>
+               <meta name="if:Use larger font for quotes" content="0"/>
+               <meta name="if:Show image shadows" content="1"/>
+               <meta name="if:Show tags" content="1"/>
+               <meta name="if:Show post notes" content="1"/>
+               <meta name="if:Show copyright in footer" content="1"/>
+               <meta name="text:Disqus Shortname" content="" />
+               <meta name="text:Google Analytics ID" content=""/>
+               <link rel="shortcut icon" href="{Favicon}" />
+               <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+            </head>
+            <body>
+               <div id="fb-root"></div>
+               <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+               </script>
+               <nav class='nav-bg l-module' id='nav-fixed'>
+                  <span class='red-bar'></span>
+                  <div class='l-container--full nav-wrap'>
+                     <div class='nav-bar'>
+                        <a class ="language" href ="#">Français</a>
+                        <a class="logo" href="index.html">
+                           <h1>Bureau</h1>
+                        </a>
+                        <div class='nav-btn' id='navtoggle'>
+                           <span class='nav-icon'></span>
+                           <span class='nav-icon'></span>
+                           <span class='nav-icon'></span>
+                        </div>
+                     </div>
+                     <div class='nav-container nav-hidden'>
+                        <ul class='nav-links'>
+                           <li>
+                              <a class="page-work__link" href="http://www.scottsavarie.ca/bureau-site/work.html">Work</a>
+                           </li>
+                           <li>
+                              <a class="page-profile__link" href="http://www.scottsavarie.ca/bureau-site/profile.html">Profile</a>
+                           </li>
+                           <li>
+                              <a class="page-services__link" href="http://www.scottsavarie.ca/bureau-site/services.html">Services</a>
+                           </li>
+                           <li>
+                              <a class="page-blog__link" href="http://www.bureauuser.tumblr.com">Blog</a>
+                           </li>
+                           <li>
+                              <a class="page-contact__link" href="#contact-wrap" >Contact</a>
+                           </li>
+                        </ul>
+                        <ul class='nav-social ss-icon'>
+                           <li>
+                              <a href="http://www.twitter.com/bureaugroup" target="blank">twitter</a>
+                           </li>
+                           <li>
+                              <a href="http://www.facebook.com/bureaugroup" target="blank">facebook</a>
+                           </li>
+                           <li>
+                              <a href="https://plus.google.com/111226183375551688410/" target="blank">google+</a>
+                           </li>
+                           <li>
+                              <a href="http://www.linkedin.com/company/2904088" target="blank">linkedin</a>
+                           </li>
+                           <li>
+                              <a href="http://www.youtube.com/channel/UC7SElPeEBqy-q1ifcKVkbqg/" target="blank">youtube</a>
+                           </li>
+                           <li>
+                              <a href="http://www.pinterest.com/bureaugroup/" target="blank">pinterest</a>
+                           </li>
+                           <li>
+                              <a href="http://www.instagram.com/bureaugroup" target="blank">instagram</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+               <div class='nav-fixed-fix'></div>
+               <section class='l-module--spaced' id='contact-wrap'>
+                  <div class='l-container--narrow contact-bg'>
+                     <h1 class='header--grey txt-center'>Get in touch</h1>
+                     <form action='contact-form-handler.php' data-error-container='#contactform-errors' data-validate='parsley' id='contact-form' method='post' novalidate=''>
+                        <fieldset>
+                           <input class='input-field' data-error-message='We need your name!' name='name' placeholder='Your full name' required='required' type='name'>
+                           <input class='input-field' data-error-message="Hey, what's with your email?" name='email' placeholder='Your email address' required='required' type='email'>
+                           <input class='input-field' name='tel' placeholder='Your phone number' type='tel'>
+                           <input class='input-field' name='text' placeholder='Your company' type='text'>
+                           <textarea class='input-field--message' data-error-message='You gotta tell us something!' name='message' placeholder='Tell us more…' required='required'></textarea>
+                           <input class='btn-primary' id='submit' name='submit' type='submit' value='Submit'>
+                        </fieldset>
+                     </form>
+                     <div class='contact-details-container'>
+                        <div id='contactform-errors'></div>
+                     </div>
+                     <div class='contact-details-container'>
+                        <a class='contact-map' href='http://goo.gl/maps/fLbOM' target='blank'>
+                           <div class='contact-pin-wrap'>
+                              <div class='contact-pin'>
+                                 <img class='bureau-office' src='http://www.scottsavarie.ca/bureau-site/img/bureau-office.jpg'>
+                                 <ul class='bureau-address'>
+                                    <li class='bureau-title'>Bureau</li>
+                                    <li class='bureau-address-list'>170 Elgin St.,</li>
+                                    <li class='bureau-address-list'>Sudbury Ontario P3E 3N5</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <img class='map-image' src='http://www.scottsavarie.ca/bureau-site/img/bureau-map.jpg'>
+                        </a>
+                        <ul class='contact-list'>
+                           <li>
+                              <a href='mailto:hello@bureau.ca'>
+                              <span>hello@bureau.ca</span>
+                              </a>
+                           </li>
+                           <li>
+                              <span class='txt-bold t'>T</span>
+                              <span>705 586 3189</span>
+                           </li>
+                           <li>
+                              <span class='txt-bold tf'>TF</span>
+                              <span>877 586 3189</span>
+                           </li>
+                           <li>
+                              <span class='txt-bold t'>F</span>
+                              <span>705 586 3197</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <span class='close-trigger' id='close-trigger'>
+                     ×
+                     </span>
+                  </div>
+               </section>
+               {block:IfShowBarOnTop}
+               <section id="color_bar"></section>
+               {/block:IfShowBarOnTop}
+               <section class="l-module--wide">
+                  <div class="l-container">
+                     <div class="two-thirds fl">
+                     <ul id="posts">
+                        <!-- START POSTS -->
+                        {block:Posts}
+                        <li class="border-bottom post group" {block:IfShowPostNotes} {block:PostNotes} style="padding:0"{/block:PostNotes} {/block:IfShowPostNotes}>
+                        {block:Photo}
+                        <section class="   top media" style="display:block;">
+                           {LinkOpenTag}
+                           <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}{Question}
+                        </section>
+                        {/block:Photo}
+                        {block:Photoset}
+                        <section class="   top media photoset">{Photoset-700}</section>
+                        {/block:Photoset}
+                        {block:Link}
+                        <section class="   top link_post">
+                           <a href="{URL}" class="link">
+                           {Name}
+                           <span class="arrow"></span>
+                           </a>
+                        </section>
+                        {/block:Link}
+                        {block:Audio}
+                        <section class="   top audio">{AudioPlayerBlack}</section>
+                        {/block:Audio}
+                        {block:Video}
+                        <section class="   top media">{Video-700}</section>
+                        {/block:Video}
+                        <div class="l-module--wide group caption_and_post_info
+                           {block:Photo} after_top_part isphoto{/block:Photo}
+                           {block:Photoset} after_top_part isphoto{/block:Photoset}
+                           {block:Link} after_top_part islink{/block:Link}
+                           {block:Audio} after_top_part isaudio{/block:Audio}
+                           {block:Video} after_top_part isvideo{/block:Video}
+                           ">
+                           {block:Text}
+                           <section class="   caption group">
+                              {block:Title}
+                              <h2 class= "header--grey">
+                                 <a class ="grey-link"href="{Permalink}">{Title}</a>
+                              </h2>
+                              {/block:Title}
+
+
+
+                     <ul class="
+                              post_info post-info-list
+                              {block:IfPlaceTimestampInLeftColumn}
+                              {block:Text} floating{/block:Text}
+                              {block:Answer} floating{/block:Answer}
+                              {block:Photo}{block:Caption} floating{/block:Caption}{/block:Photo}
+                              {block:Photo}{block:ContentSource} floating{/block:ContentSource}{/block:Photo}
+                              {block:Photoset}{block:Caption} floating{/block:Caption}{/block:Photoset}
+                              {block:Photoset}{block:ContentSource} floating{/block:ContentSource}{/block:Photoset}
+                              {block:Quote} floating{/block:Quote}
+                              {block:Link}{block:Description} floating{/block:Description}{/block:Link}
+                              {block:Link}{block:ContentSource} floating{/block:ContentSource}{/block:Link}
+                              {block:Chat} floating{/block:Chat}
+                              {block:Audio}{block:Caption} floating{/block:Caption}{/block:Audio}
+                              {block:Audio}{block:ContentSource} floating{/block:ContentSource}{/block:Audio}
+                              {block:Video}{block:Caption} floating{/block:Caption}{/block:Video}
+                              {block:Video}{block:ContentSource} floating{/block:ContentSource}{/block:Video}
+                              {/block:IfPlaceTimestampInLeftColumn}
+                              ">
+
+                              {block:Date}
+                              <li>
+                                 <a href="{Permalink}" class="grey-link">
+                                 {block:IndexPage}{TimeAgo}{/block:IndexPage}{block:PermalinkPage}{block:Date}{Month} {DayOfMonth}, {Year} ({12Hour}:{Minutes} {AmPm}){/block:Date}{/block:PermalinkPage}
+                                 </a>
+                              </li>
+                              {/block:Date}
+
+                              {block:PermalinkPage}{block:HasTags}{/block:HasTags}{/block:PermalinkPage}
+                              {block:IfShowPostNotes}
+                              {block:NoteCount}
+                              <li>
+                                 <a class="notecount" href="{Permalink}#notes">{NoteCount} notes</a>
+                              </li>
+                              {/block:NoteCount}
+                              {/block:IfShowPostNotes}
+                              {block:IfShowTags}
+                              {block:Tags}
+                              <li>
+                                 <a class="tag grey-link" href="{TagURL}">
+                                 <span>#</span>
+                                 {Tag}
+                                 </a>
+                              </li>
+                              {/block:Tags}
+                              {/block:IfShowTags}
+
+                            <li>
+
+                           {block:IfDisqusShortname}{block:IndexPage}
+                            <a class="disquscomments" href="{Permalink}#disqus_thread">{NoteCount} Comments</a>
+                           {/block:IndexPage}{/block:IfDisqusShortname}
+                           
+
+                              </li>
+
+                           </ul>
+
+
+
+
+
+
+                              <div class="blog-content-wrap cont group">{Body}</div>
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+
+                                 <ul class="post_controls group">
+                                    <li>{ReblogButton size="21"}</li>
+                                    <li>{LikeButton size="21"}</li>
+                                 </ul>
+
+
+                           </section>
+                           {/block:Text}
+                           {block:Answer}
+                           <section class="   caption group">
+                              <div class="cont group">
+                                 <div class="question bubble">
+                                    {Question}
+                                    <span class="arrow border"></span>
+                                    <span class="arrow fill"></span>
+                                 </div>
+                                 <div class="asker group">
+                                    <img src="{AskerPortraitURL-24}" width="24" height="24" />
+                                    {Asker}
+                                 </div>
+                                 <div class="answer cont">{Answer}</div>
+                              </div>
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Answer}
+                           {block:Photo}
+                           <section class="   caption group">
+                              {block:Caption}
+                              <div class="cont">{Caption}</div>
+                              {/block:Caption}
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Photo}
+                           {block:Photoset}
+                           <section class="   caption group">
+                              {block:Caption}
+                              <div class="cont">{Caption}</div>
+                              {/block:Caption}
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Photoset}
+                           {block:Quote}
+                           <section class="   caption group">
+                              <section class="quote {Length}_text {block:IfUseLargerFontForQuotes}larger_text{/block:IfUseLargerFontForQuotes}">
+                                 <span>“</span>
+                                 {Quote}”
+                              </section>
+                              {block:Source}
+                              <div class="cont quote_source">&mdash; {Source}</div>
+                              {/block:Source}
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Quote}
+                           {block:Link}
+                           {block:Description}
+                           <section class="   caption group">
+                              <div class="cont">{Description}</div>
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Description}
+                           {/block:Link}
+                           {block:Chat}
+                           <section class="   caption group">
+                              {block:Title}
+                              <h2>
+                                 <a href="{Permalink}">{Title}</a>
+                              </h2>
+                              {/block:Title}
+                              <ul class="conversation">
+                                 {block:Lines}
+                                 <li class="chat_line user{UserNumber}">
+                                    {block:Label} <strong>{Label}</strong>
+                                    &nbsp;&nbsp;
+                                    {/block:Label}
+                                    {Line}
+                                 </li>
+                                 {/block:Lines}
+                              </ul>
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Chat}
+                           {block:Audio}
+                           {block:Caption}
+                           <section class="   caption group">
+                              <div class="cont">{Caption}</div>
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Caption}
+                           {/block:Audio}
+                           {block:Video}
+                           <section class="   caption group">
+                              {block:Caption}
+                              <div class="cont">{Caption}</div>
+                              {/block:Caption}
+                              {block:ContentSource}
+                              <div class="cont content_source">
+                                 <a href="{SourceURL}">
+                                 {lang:Source}:
+                                 {block:SourceLogo}
+                                 <img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />
+                                 {/block:SourceLogo}
+                                 {block:NoSourceLogo}
+                                 {SourceTitle}
+                                 {/block:NoSourceLogo}
+                                 </a>
+                              </div>
+                              {/block:ContentSource}
+                           </section>
+                           {/block:Video}
+                          {block:More}
+                        <div class="blog-readmore">
+                          <a href="{Permalink}" class="btn-primary">Read More</a>
+                      </div>
+                          {/block:More}
+
+                           {block:IfDisqusShortname}{block:Permalink}
+                           <div class="l-module--wide" id="disqus_thread"></div>
+                           <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                           <noscript>
+                              <a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a>
+                           </noscript>
+                           {/block:Permalink}{/block:IfDisqusShortname}
+
+
+
+                        </div>
+                        </li>
+                        {/block:Posts}
+                        <!-- END POSTS --> 
+
+                     </ul>
+                {block:Pagination}
+                <nav class="l-module--wide pagination">
+                      <section class="buttons">
+                         {block:PreviousPage}<a href="{PreviousPage}" class="newer-btn btn-secondary" style="
+                            color: white;
+                            ">Newer
+                         </a>{/block:PreviousPage}
+                         {block:NextPage}<a href="{NextPage}" class="btn-secondary" style="
+                            color: white;
+                            ">
+                         Older
+                         </a>{/block:NextPage}
+                      </section>
+                </nav>
+               {/block:Pagination}
+
+                    </div>
+                     <aside class="one-third fr grey-bg blog-sidebar">
+                        
+                        <div>
+                        <p class="recent-header">Recent</p>
+                        <ul id="recent-posts"></ul>
+                        </div>
+                        <div class="fb-like-box" data-href="http://www.facebook.com/bureaugroup"  data-show-faces="true" data-stream="true" data-header="true"></div>
+                        {block:HasPages}
+                        <ul class="links">
+                           {block:Pages}
+                           <li>
+                              <a href="{URL}">{Label}</a>
+                           </li>
+                           {/block:Pages}
+                        </ul>
+                        {/block:HasPages}
+                        <ul class="links" style="display:none;{block:AskEnabled} display:block;{/block:AskEnabled}{block:SubmissionsEnabled} display:block;{/block:SubmissionsEnabled}">
+                           {block:AskEnabled}
+                           <li>
+                              <a href="/ask" class="ask">
+                              <span class="icon"></span>
+                              ask me anything
+                              </a>
+                           </li>
+                           {/block:AskEnabled}
+                           {block:SubmissionsEnabled}
+                           <li>
+                              <a href="/submit" class="submit">
+                              <span class="icon"></span>
+                              submit a post
+                              </a>
+                           </li>
+                           {/block:SubmissionsEnabled}
+                        </ul>
+                      
+                        {block:Twitter}
+                        <aside id="twitter_container" style="display:none"></aside>
+                        <script type="text/javascript">
+                           function recent_tweets(data) {
+                               document.getElementById("twitter_container").innerHTML =
+                               document.getElementById("twitter_container").innerHTML +
+                               '<a class="bubble" href="http://twitter.com/{TwitterUsername}/status/' +
+                               (data[0].id_str ? data[0].id_str : data[0].id) +
+                               '">' + data[0].text +
+                               '<span class="arrow border"></span><span class="arrow fill"></span></a>' +
+                               '<a href="twitter.com/{TwitterUsername}" class="twitter_username">@{TwitterUsername}</a>';
+                           
+                               document.getElementById("twitter_container").style.display = 'block';
+                           }
+                        </script>
+                        {/block:Twitter}
+
+                        {block:IfShowBlogDescription}{block:Description}
+                        <div class="cont description group">{Description}</div>
+                        {/block:Description}{/block:IfShowBlogDescription}
+
+                          <ul class="links">
+                           <li>
+                              <a href="{RSS}" class="rss">
+                              <span class="icon"></span>
+                              rss
+                              </a>
+                           </li>
+                           <li>
+                              <a href="/archive" class="archive">
+                              <span class="icon"></span>
+                              archive
+                              </a>
+                           </li>
+                        </ul>
+                     
+
+
+                     </aside>
+                  </div>
+
+                  {block:IfDisqusShortname}
+                  <script type="text/javascript">
+                     //<![CDATA[
+                     (function() {
+                         var links = document.getElementsByTagName('a');
+                         var query = '?';
+                         for(var i = 0; i < links.length; i++) {
+                             if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                                 query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                             }
+                         }
+                         document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+                     })();
+                     //]]>
+                  </script>
+                  {/block:IfDisqusShortname}
+
+               </section>
+
+
+
+
+               <footer class='l-module--wide border-top'>
+                  <div class='l-container'>
+                     <div class='social-module'>
+
+                        <div class='twitter-btn'>
+                           <a href="https://twitter.com/bureaugroup" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @bureaugroup</a>
+                           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                        <div class='gplus-btn'>
+                           <div class="g-plusone"></div>
+                           <script>(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
+                        </div>
+                     </div>
+                     <div class='mailing-list'>
+                        <div id="mc_embed_signup">
+                           <form action="http://bureaugroup.us6.list-manage1.com/subscribe/post?u=17df770b3c8d60a832042045e&amp;id=8ab0e97015" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><label for="mce-EMAIL">Bulletin</label><input type="email" value="" name="EMAIL" class="email input-field" id="mce-EMAIL" placeholder="Your email address" required><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-secondary"></form>
+                        </div>
+                     </div>
+                     <div class='contact-info'>
+                        <address>
+                           <span class="txt-bold">Bureau</span> <a class="grey-link" href="http://goo.gl/maps/fLbOM" target="blank">Elgin St., Sudbury Ontario P3E 3N5</a>
+                           <div class="tel-email"><span class="footer-tel">705 586 3189</span><a href="mailto:hello@bureau.ca">hello@bureau.ca</a></div>
+                        </address>
+                     </div>
+                  </div>
+               </footer>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/jquery-1.8.3.min.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/log-polyfill.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/placeholder.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/parsley.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/respond.min.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/ss-social.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/modules/tumblrfeed.js'></script>
+               <script src='http://www.scottsavarie.ca/bureau-site/js/main.js'></script>
+               <script>
+               $(function() {
+                    var url = '/rss';
+                    var $list = $('#recent-posts');
+                    $.ajax({
+                        url: 'http://bureauuser.tumblr.com/rss',
+                        type: 'GET',
+                        dataType: 'xml',
+                        success: function(data) {                
+                            var $items = $(data).find('item');
+                            $items.each( function() {
+                                var $item = $(this);
+                                var link = $item.children('link').text();
+                                var title = $item.children('title').text();
+                                if (link && title) {
+                                    $list.append($('<li><a class="sidebar-recent grey-link" href="' + link + '">' + title + '</a></li>'));
+                                }
+                            });
+                        }
+                    });
+                });
+
+               </script>
+
+            </body>
+         </html>

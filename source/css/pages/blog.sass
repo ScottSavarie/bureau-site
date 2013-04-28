@@ -1,3 +1,127 @@
+// TUMBLR STYLING
+
+#posts
+  margin-bottom: $l-l
+  @media only screen and (min-width: $third-break)
+    margin-bottom: 0
+
+  h1
+    font-size: 1.5em
+  .blog-post-wrap
+    margin-top: $l-s
+    margin-bottom: $l-s
+    padding-bottom: $l-s
+    padding-top: $l-s
+    @media only screen and (min-width: $second-break)
+      margin-top: $l-m
+      margin-bottom: $l-m
+      padding-bottom: $l-m
+      padding-top: $l-m
+
+
+.blog-sidebar
+  padding: $l-m
+  box-sizing: border-box 
+  margin-top: $l-s  
+  margin-bottom: $l-m
+  @media only screen and (min-width: $second-break)
+    margin-top: 3em  
+    margin-bottom: 0     
+
+.fb_ltr, .fb_rtl, .facebook
+  width: 100% !important
+
+.fb_iframe_widget 
+  width: 100% !important
+  span
+    width: 100% !important
+
+
+
+.post-info-list
+  margin-bottom: $l-m
+  li
+    display: inline-block
+    padding-right: $l-s / 2
+    &:last-child
+      padding-right: 0
+
+.post_controls.group, .links
+  li
+    display: inline-block
+    padding-right: $l-s /2
+    &:last-child
+      padding-right: 0
+
+
+.blog-readmore
+  padding: $l-xl 0 $l-m 0
+
+.blog-content-wrap
+  ul
+    padding-left: 1.2em
+  li
+    list-style: disc outside
+    padding: $l-s /2 0
+
+  blockquote    
+    font-style: italic
+    position: relative 
+    font-size: 2em
+    font-family: georgia, sans-serif
+    margin-left: 2em
+    &:after
+      content: '“'
+      position: absolute
+      left: -0.7em
+      top: -0.1em
+      font-size: 3em
+      font-weight: 900
+
+  img[align="right"]
+    padding-left: $l-s
+    padding-top: $l-s
+    padding-bottom: $l-s
+    padding-right: 0
+  
+  img[align="left"]
+    padding-right: $l-s
+    padding-top: $l-s
+    padding-bottom: $l-s
+    padding-left: 0
+  iframe
+    width: 100% !important  
+
+.newer-btn
+  margin-right: $l-s
+
+
+.recent-header
+  text-transform: uppercase  
+  font-size: 0.675em
+  font-weight: 500
+
+//tags
+.sidebar-recent
+  padding: $l-s 0
+  box-sizing: border-box
+  display: block
+  border-bottom: 1px solid rgb(223, 223, 223)
+  overflow: hidden
+  white-space: nowrap
+  font-size: $f-s
+  text-overflow: ellipsis
+  +helvetica-bold
+  +single-transition(all, 0.2s, ease-out)
+  &:hover
+    background: rgb(238, 238, 238)
+
+#recent-posts
+  margin-bottom: $l-m
+
+// WEBSITE BLOG MODULE
+
+
 .blog-module
   h1
     @media only screen and (min-width: $first-break)
