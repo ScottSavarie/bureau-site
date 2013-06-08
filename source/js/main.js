@@ -103,7 +103,7 @@ $("#home-arrow").click(function(){
 
 $(document).ready(function() {
     var width = $(window).width();
-    if (width >= 767) {
+    if (width >= 1025) {
         $("#specialty-one, #specialty-two, #specialty-three").addClass("hidden");
             
 

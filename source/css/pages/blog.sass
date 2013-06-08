@@ -1,5 +1,29 @@
 // TUMBLR STYLING
 
+
+.opt-in
+  padding: $l-xl 0
+  width: 100%
+  .email
+    width: 74%
+    margin: 0 !important
+    margin-right: 3% !important
+    @media only screen and (min-width: $first-break)
+      width: 77%
+    @media only screen and (min-width: $second-break)
+      width: 70%
+    @media only screen and (min-width: $third-break)
+      width: 76%
+    @media only screen and (min-width: 1280px)
+      width: 77%
+  .button
+    width: 20%
+    min-width: 7em   
+  p
+    font-size: 1.3em
+
+
+
 #posts
   margin-bottom: $l-l
   @media only screen and (min-width: $third-break)
@@ -67,7 +91,7 @@
   blockquote    
     font-style: italic
     position: relative 
-    font-size: 2em
+    font-size: $f-l
     font-family: georgia, sans-serif
     margin-left: 2em
     &:after
@@ -127,7 +151,7 @@
     @media only screen and (min-width: $first-break)
       margin-bottom: $l-s - .5
   
-  a.blog-teaser-link
+  .blog-teaser
     width: 85%
     padding: 7%
     border: 1px solid $c-lightergrey
@@ -165,8 +189,6 @@
 
 
 #tumblrfeed
-  // p:nth-child(2n+1)
-  //   display: none
   .blog-teaser
     height: 10em
     overflow: hidden

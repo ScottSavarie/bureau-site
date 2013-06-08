@@ -265,6 +265,7 @@
                               {/block:Tags}
                               {/block:IfShowTags}
 
+
                             <li>
 
                            {block:IfDisqusShortname}{block:IndexPage}
@@ -300,7 +301,6 @@
                                     <li>{ReblogButton size="21"}</li>
                                     <li>{LikeButton size="21"}</li>
                                  </ul>
-
 
                            </section>
                            {/block:Text}
@@ -489,13 +489,29 @@
                               {/block:ContentSource}
                            </section>
                            {/block:Video}
+
+
+
                           {block:More}
                         <div class="blog-readmore">
                           <a href="{Permalink}" class="btn-primary">Read More</a>
                       </div>
                           {/block:More}
 
+                     
+                     
+
+
                            {block:IfDisqusShortname}{block:Permalink}
+
+                           <div class="l-module--wide">
+                              <div class='opt-in grey-bg'>
+                                 <div class="l-container" id="mc_embed_signup">
+                                    <form action="http://bureaugroup.us6.list-manage1.com/subscribe/post?u=17df770b3c8d60a832042045e&amp;id=8ab0e97015" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate><p>If you enjoyed this article, sign up to the Bureau Bulletin (it's free).</p><input type="email" value="" name="EMAIL" class="email input-field" id="mce-EMAIL" placeholder="Your email address" required><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn-secondary"></form>
+                                 </div>
+                              </div>
+                           </div>
+
                            <div class="l-module--wide" id="disqus_thread"></div>
                            <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
                            <noscript>
@@ -629,6 +645,10 @@
                <footer class='l-module--wide border-top'>
                   <div class='l-container'>
                      <div class='social-module'>
+
+                     <div class='facebook-btn'>
+                        <div class="fb-like" data-href="http://www.facebook.com/bureaugroup" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+                      </div>
 
                         <div class='twitter-btn'>
                            <a href="https://twitter.com/bureaugroup" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @bureaugroup</a>
