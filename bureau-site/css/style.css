@@ -1718,7 +1718,7 @@ a.btn-primary, a:visited.btn-primary {
   .blog-module h1 {
     margin-bottom: 0.32341em; } }
 /* line 154, pages/blog.sass */
-.blog-module a.blog-teaser-link {
+.blog-module .blog-teaser {
   width: 85%;
   padding: 7%;
   border: 1px solid #dddddd;
@@ -1731,7 +1731,7 @@ a.btn-primary, a:visited.btn-primary {
   position: relative; }
   @media only screen and (min-width: 580px) {
     /* line 154, pages/blog.sass */
-    .blog-module a.blog-teaser-link {
+    .blog-module .blog-teaser {
       width: 39%;
       margin: 1%;
       padding: 4%;
@@ -1745,16 +1745,16 @@ a.btn-primary, a:visited.btn-primary {
       margin-top: 0; } }
   @media only screen and (min-width: 960px) {
     /* line 154, pages/blog.sass */
-    .blog-module a.blog-teaser-link {
+    .blog-module .blog-teaser {
       width: 42%;
       padding: 2.5%; } }
   /* line 172, pages/blog.sass */
-  .blog-module a.blog-teaser-link:hover, .blog-module a.blog-teaser-link:focus {
+  .blog-module .blog-teaser:hover, .blog-module .blog-teaser:focus {
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2); }
   /* line 174, pages/blog.sass */
-  .blog-module a.blog-teaser-link:active {
+  .blog-module .blog-teaser:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -1773,12 +1773,12 @@ a.btn-primary, a:visited.btn-primary {
   width: 100%;
   height: 100%; }
 
-/* line 194, pages/blog.sass */
+/* line 192, pages/blog.sass */
 #tumblrfeed .blog-teaser {
   height: 10em;
   overflow: hidden;
   text-overflow: ellipsis; }
-  /* line 198, pages/blog.sass */
+  /* line 196, pages/blog.sass */
   #tumblrfeed .blog-teaser:after {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(88%, #ffffff));
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
@@ -1792,10 +1792,10 @@ a.btn-primary, a:visited.btn-primary {
     left: 0;
     width: 100%;
     height: 100%; }
-  /* line 207, pages/blog.sass */
+  /* line 205, pages/blog.sass */
   #tumblrfeed .blog-teaser h1, #tumblrfeed .blog-teaser h2, #tumblrfeed .blog-teaser h3, #tumblrfeed .blog-teaser h4, #tumblrfeed .blog-teaser h5, #tumblrfeed .blog-teaser h6, #tumblrfeed .blog-teaser ul, #tumblrfeed .blog-teaser blockquote, #tumblrfeed .blog-teaser img, #tumblrfeed .blog-teaser iframe, #tumblrfeed .blog-teaser br, #tumblrfeed .blog-teaser video, #tumblrfeed .blog-teaser audio {
     display: none; }
-  /* line 209, pages/blog.sass */
+  /* line 207, pages/blog.sass */
   #tumblrfeed .blog-teaser h2.header--red {
     display: block !important; }
 

@@ -151,7 +151,7 @@
     @media only screen and (min-width: $first-break)
       margin-bottom: $l-s - .5
   
-  .blog-teaser
+  .gfc-result
     width: 85%
     padding: 7%
     border: 1px solid $c-lightergrey
@@ -159,6 +159,15 @@
     +single-transition(all, 0.2s, ease-out)
     display: block
     position: relative
+    &:after
+      +background-image(linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 70%))
+      content: ""
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 60%
     @media only screen and (min-width: $first-break)
       width: 39%
       margin: 1%
@@ -176,34 +185,29 @@
       top: 1px
 
 
-  .blog-date
-    line-height: 2
-    color: $c-lightgrey
-    +helvetica-light
-  p
-    margin-top: $l-s  
-
 .blog-embed
   width: 100%
   height: 100%
 
 
-#tumblrfeed
-  .blog-teaser
-    height: 10em
-    overflow: hidden
-    text-overflow: ellipsis
-    &:after
-      +background-image(linear-gradient(top, rgba(#fff,0) 20%, rgba(#fff,1) 88%))
-      content: ""
-      display: block
-      position: absolute
-      bottom: 0
-      left: 0
-      width: 100%
-      height: 100%
-    h1, h2, h3, h4, h5, h6, ul, blockquote, img, iframe, br, video, audio
-      display: none
-    h2.header--red
-      display: block !important  
-
+// strip gfc styles 
+.gfc-resultsHeader
+  display: none
+.gfc-results
+  .gfc-result
+    .gf-title
+      height: auto
+      a
+        color: $c-red
+        font-size: $f-l
+        +helvetica-light
+        display: block
+    .gf-relativePublishedDate
+      margin-top: $l-s /2
+      display: block    
+    .gf-snippet
+      margin-top: $l-s    
+      font-weight: 200
+      color: #5f6163
+      line-height: 1.625
+      margin-bottom: 0.82341em
