@@ -1718,7 +1718,7 @@ a.btn-primary, a:visited.btn-primary {
   .blog-module h1 {
     margin-bottom: 0.32341em; } }
 /* line 154, pages/blog.sass */
-.blog-module .blog-teaser {
+.blog-module .gfc-result {
   width: 85%;
   padding: 7%;
   border: 1px solid #dddddd;
@@ -1729,9 +1729,23 @@ a.btn-primary, a:visited.btn-primary {
   transition: all 0.2s ease-out;
   display: block;
   position: relative; }
+  /* line 162, pages/blog.sass */
+  .blog-module .gfc-result:after {
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, #ffffff));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 70%);
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; }
   @media only screen and (min-width: 580px) {
     /* line 154, pages/blog.sass */
-    .blog-module .blog-teaser {
+    .blog-module .gfc-result {
       width: 39%;
       margin: 1%;
       padding: 4%;
@@ -1745,59 +1759,50 @@ a.btn-primary, a:visited.btn-primary {
       margin-top: 0; } }
   @media only screen and (min-width: 960px) {
     /* line 154, pages/blog.sass */
-    .blog-module .blog-teaser {
+    .blog-module .gfc-result {
       width: 42%;
       padding: 2.5%; } }
-  /* line 172, pages/blog.sass */
-  .blog-module .blog-teaser:hover, .blog-module .blog-teaser:focus {
+  /* line 181, pages/blog.sass */
+  .blog-module .gfc-result:hover, .blog-module .gfc-result:focus {
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2); }
-  /* line 174, pages/blog.sass */
-  .blog-module .blog-teaser:active {
+  /* line 183, pages/blog.sass */
+  .blog-module .gfc-result:active {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     top: 1px; }
-/* line 179, pages/blog.sass */
-.blog-module .blog-date {
-  line-height: 2;
-  color: #7c7c7c;
-  font-weight: 200; }
-/* line 183, pages/blog.sass */
-.blog-module p {
-  margin-top: 0.82341em; }
 
-/* line 186, pages/blog.sass */
+/* line 188, pages/blog.sass */
 .blog-embed {
   width: 100%;
   height: 100%; }
 
-/* line 192, pages/blog.sass */
-#tumblrfeed .blog-teaser {
-  height: 10em;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-  /* line 196, pages/blog.sass */
-  #tumblrfeed .blog-teaser:after {
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(88%, #ffffff));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0) 20%, #ffffff 88%);
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  /* line 205, pages/blog.sass */
-  #tumblrfeed .blog-teaser h1, #tumblrfeed .blog-teaser h2, #tumblrfeed .blog-teaser h3, #tumblrfeed .blog-teaser h4, #tumblrfeed .blog-teaser h5, #tumblrfeed .blog-teaser h6, #tumblrfeed .blog-teaser ul, #tumblrfeed .blog-teaser blockquote, #tumblrfeed .blog-teaser img, #tumblrfeed .blog-teaser iframe, #tumblrfeed .blog-teaser br, #tumblrfeed .blog-teaser video, #tumblrfeed .blog-teaser audio {
-    display: none; }
-  /* line 207, pages/blog.sass */
-  #tumblrfeed .blog-teaser h2.header--red {
-    display: block !important; }
+/* line 194, pages/blog.sass */
+.gfc-resultsHeader {
+  display: none; }
+
+/* line 198, pages/blog.sass */
+.gfc-results .gfc-result .gf-title {
+  height: auto; }
+  /* line 200, pages/blog.sass */
+  .gfc-results .gfc-result .gf-title a {
+    color: #bc2f33;
+    font-size: 1.5em;
+    font-weight: 200;
+    display: block; }
+/* line 205, pages/blog.sass */
+.gfc-results .gfc-result .gf-relativePublishedDate {
+  margin-top: 0.4117em;
+  display: block; }
+/* line 208, pages/blog.sass */
+.gfc-results .gfc-result .gf-snippet {
+  margin-top: 0.82341em;
+  font-weight: 200;
+  color: #5f6163;
+  line-height: 1.625;
+  margin-bottom: 0.82341em; }
 
 /* line 1, pages/project-crosslink.sass */
 .project-crosslink {
