@@ -135,12 +135,11 @@
       margin-right: 0
 
 .dotted-arrow
-  // background: url(../img/dotted-arrow-vert.svg) no-repeat
-  height: 195px
-  width: 14px
-  margin: 0 auto
+  @media only screen and (min-width: $second-break)
+    height: 195px
+    width: 14px
+    margin: 0 auto
   @media only screen and (min-width: $third-break)
-    // background: url(../img/dotted-arrow.svg) no-repeat
     height: 14px
     width: 195px
     position: absolute
@@ -152,13 +151,15 @@
 
 .svg
   .dotted-arrow
-    background: url(../img/dotted-arrow-vert.svg) no-repeat
+    @media only screen and (min-width: $second-break)
+      background: url(../img/dotted-arrow-vert.svg) no-repeat
     @media only screen and (min-width: $third-break)
       background: url(../img/dotted-arrow.svg) no-repeat
 
 .no-svg
   .dotted-arrow
-    background: url(../img/dotted-arrow-vert.png) no-repeat
+    @media only screen and (min-width: $second-break)
+      background: url(../img/dotted-arrow-vert.png) no-repeat
     @media only screen and (min-width: $third-break)
       background: url(../img/dotted-arrow.png) no-repeat
 

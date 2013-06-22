@@ -108,7 +108,7 @@ $(document).ready(function() {
             
 
             $(window).scroll(function(event) {
-            if($("#specialty").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+            if($("#specialty").position().top < $(window).scrollTop() + $(window).outerHeight()) {
                 $("#specialty-one").removeAttr( 'style' );
                 $("#specialty-one").addClass("visible");
 
@@ -122,11 +122,6 @@ $(document).ready(function() {
                 // do nothing
             }
             });
-
-
-                
-
-
 
     
     }

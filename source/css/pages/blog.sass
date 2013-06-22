@@ -22,7 +22,10 @@
   p
     font-size: 1.3em
 
-
+.iframe_controls
+  +opacity(0)
+.disquscomments
+  text-transform: lowercase
 
 #posts
   margin-bottom: $l-l
@@ -41,6 +44,12 @@
       margin-bottom: $l-m
       padding-bottom: $l-m
       padding-top: $l-m
+
+
+#recent-posts 
+  li:nth-of-type(n+6)
+    display: none
+
 
 
 .blog-sidebar
