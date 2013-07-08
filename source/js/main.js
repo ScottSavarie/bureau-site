@@ -147,43 +147,37 @@ $("#videotrigger").click(function () {
 ============================================================================== */
 
 
-function scrollFunc(e) {
-
-    if (window.pageYOffset < 0 || window.pageYOffset > (document.height - window.innerHeight)) return false;
-
-    if ( typeof scrollFunc.x == 'undefined' ) {
-        scrollFunc.x=window.pageXOffset;
-        scrollFunc.y=window.pageYOffset;
-    }
-    var diffX=scrollFunc.x-window.pageXOffset;
-    var diffY=scrollFunc.y-window.pageYOffset;
-
-    if( diffX<0 ) {
-        // Scroll right
-    } else if( diffX>0 ) {
-        // Scroll left
-    } else if( diffY<0 ) {
-        // Scroll down Article Nav show
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
             $("#nav-fixed").removeClass("visible");
             $("#nav-fixed").addClass("hidden"); 
+   } 
+
+   else {
+            $("#nav-fixed").removeClass("hidden");  
+            $("#nav-fixed").addClass("visible");
+   }
+   lastScrollTop = st;
+});
 
 
 
-    } else if( diffY>0 ) {
-        // Scroll up Main Nav Show
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st <= 10){
 
             $("#nav-fixed").removeClass("hidden");  
             $("#nav-fixed").addClass("visible");
 
-    } else {
-        // First scroll event
-    }
-    scrollFunc.x=window.pageXOffset;
-    scrollFunc.y=window.pageYOffset;
+   }
 
-}
-window.onscroll=scrollFunc
+   else{
 
+   }
+
+});
 
 
 

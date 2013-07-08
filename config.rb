@@ -59,10 +59,10 @@ set :images_dir, 'img'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :cache_buster
@@ -77,6 +77,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+activate :directory_indexes
+  
 end
 
 
