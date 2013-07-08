@@ -1,13 +1,1 @@
- google.load("feeds", "1");
-
-function OnLoad() {
-var feedControl = new google.feeds.FeedControl();
-
-feedControl.addFeed("http://bureauuser.tumblr.com/rss");
-feedControl.setNumEntries(2);
-
-
-feedControl.draw(document.getElementById("tumblrfeed"));
-}
-
-google.setOnLoadCallback(OnLoad);
+function OnLoad(){var e=new google.feeds.FeedControl;e.addFeed("http://bureauuser.tumblr.com/rss"),e.setNumEntries(2),e.draw(document.getElementById("tumblrfeed"))}google.load("feeds","1"),google.setOnLoadCallback(OnLoad);
