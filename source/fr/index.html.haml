@@ -1,0 +1,90 @@
+---
+title: "Home - Bureau"
+---
+
+- @body_class = 'page-home'
+- @page_class = ''
+
+
+
+#header-cover
+  %section.l-module
+    #video-trigger.l-container--full
+      .header-video-wrapper
+        .video-mask
+          %img{:src=>"../img/bureau-intro.svg", :width=>"1500", :height=>"845"}
+        %img.video-poster-header{:src=>"../img/video-poster2.jpg", :width=>"1389", :height=>"614"}  
+        <video webkit-playsinline id="home-video--intro"class="home-video--intro" width="1368" height="769" autoplay="autoplay" poster="../img/video-poster2.jpg" loop="true"><source src="../videos/Bureau_homepage.mp4" type="video/mp4" /><source src="../videos/Bureau_homepage.oggtheora.ogg" type="video/ogg"/><source src="../videos/Bureau_homepage.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="../flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/Bureau_homepage.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="../img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>'
+      %h2.home-introtext Today's marketplace demands bold moves. You may have a great product or service, but if your customers can’t find it they'll be forced to go elsewhere. <a href="services.html">Be found.</a>
+  .l-module
+    .l-container.arrow-wrap
+      .home-arrow#home-arrow
+        %img{:src=>"../img/home-arrow.svg", :width=>"48", :height=>"48"}
+%section.l-module--spaced.grey-bg#specialty
+  .l-container.txt-center
+    %header.txt-center
+      %h1.header--red We specialize in the business of:
+    %article.specialty.specialty-search#specialty-one
+      %img{:src=>"../img/home-search.svg", :width=>"140", :height=>"140"}
+      %h2.subhead--grey Getting you found
+      %p With extensive <a href="services.html">web design</a>, <a href="services.html">web development</a>, <a href="services.html">responsive design</a>, <a href="services.html">search engine optimization</a>, and <a href="services.html">social marketing services</a>, we will help you get found, drive traffic, and rise you above your competition.
+      .dotted-arrow
+    %article.specialty#specialty-two
+      %img.specialty-market{:src=>"../img/home-market.svg", :width=>"140", :height=>"140"}
+      %h2.subhead--grey Marketing your product
+      %p You may have a great product or service, but it takes a strategy and a wide array of supporting services to reach your customer. With a combination of <a href="services.html">branding</a>, <a href="services.html">traditional marketing</a>, <a href="services.html">digital marketing</a>, and <a href="services.html">social marketing</a>, we can get you where you need to be.
+      .dotted-arrow
+    %article.specialty#specialty-three
+      %img{:src=>"../img/home-money.svg", :width=>"140", :height=>"140"}
+      %h2.subhead--grey Making you more money
+      %p With everything in place, your message will be received by the right audience, your traffic will increase and your sales will grow. We create results for our clients. 
+      %p <a href="services.html">Sounds good? Of course it does.</a>
+
+%section.l-module--spaced.border-bottom
+  .l-container
+    .video-wrapper
+      <iframe id="videotarget" class="home-video" src="" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      #videotrigger
+        %img{:src=>"../img/video-poster.jpg", :width => "1280", :height => "720"}    
+
+%section.l-module--spaced
+  .l-container--list
+    %h1.header--grey.txt-center 
+      %a.grey-link{:href=>"work.html"}
+        %span Our work
+    %ul.project-thumbnails
+      %li.palladino
+        %a{:href=>"palladino-auto-group.html"}
+          %img{:src=>"../img/logos/palladinoautogroup.svg", :width=>"397", :height=>"257"}
+      %li.lu
+        %a{:href=>"laurentian-university.html"}
+          %img{:src=>"../img/logos/laurentianuniversity.svg", :width=>"397", :height=>"257"}
+      %li.musagetes
+        %a{:href=>"musagetes.html"}
+          %img{:src=>"../img/logos/musagetesfoundation.svg", :width=>"397", :height=>"257"}
+      %li.helios
+        %a{:href=>"helios.html"}
+          %img{:src=>"../img/logos/helios.svg", :width=>"397", :height=>"257"}
+      %li.carte
+        %a{:href=>"carte-blanche-films.html"}
+          %img{:src=>"../img/logos/carteblanchefilms.svg", :width=>"397", :height=>"257"}
+      %li.bird
+        %a{:href=>"bird-kingdom.html"}
+          %img{:src=>"../img/logos/birdkingdom.png", :width=>"397", :height=>"257"}
+      %li.carrefour
+        %a{:href=>"carrefour.html"}
+          %img{:src=>"../img/logos/carrefour.svg", :width=>"397", :height=>"257"}
+      %li.tno
+        %a{:href=>"tno.html"}
+          %img{:src=>"../img/logos/tno.svg", :width=>"397", :height=>"257"}
+      %li.fcr
+        %a{:href=>"fcr.html"}
+          %img{:src=>"../img/logos/fcr.svg", :width=>"397", :height=>"257"}
+  .l-container--wide.txt-center.more-work
+    <a href="work.html">See more of our work</a>
+
+= partial "blog-teaser-fr"
+= partial "project-crosslink-fr"
+
+
+
