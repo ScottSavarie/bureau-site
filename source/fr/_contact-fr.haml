@@ -1,14 +1,14 @@
 %section.l-module--spaced#contact-wrap
   .l-container--narrow.contact-bg
-    %h1.header--grey.txt-center Get in touch
+    %h1.header--grey.txt-center Prenez contact
     %form{ :novalidate => "", :method => "post", :action => "contact-form-handler.php", :id => "contact-form", "data-validate" => "parsley", "data-error-container"=>"#contactform-errors"}
       %fieldset
-        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Your full name", :required => "required", "data-error-message" =>"We need your name!"}
-        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Your email address", :required => "required", "data-error-message" =>"Hey, what's with your email?"}
-        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Your phone number"}
-        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Your company"}
-        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Tell us more…", :required => "required", "data-error-message" =>"You gotta tell us something!"}
-        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Nom!"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique!"}
+        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Votre numéro de téléphone"}
+        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Votre entreprise"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Vos précisions utiles…", :required => "required", "data-error-message" =>"You gotta tell us something!"}
+        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Soumettre"}
     .contact-details-container 
       #contactform-errors    
     .contact-details-container    
@@ -18,12 +18,12 @@
             %img.bureau-office{:src => "../img/bureau-office.jpg"}
             %ul.bureau-address
               %li.bureau-title Bureau
-              %li.bureau-address-list 170 Elgin St Greater Sudbury, ON P3E 3N5
+              %li.bureau-address-list 170 rue Elgin Grand Sudbury, ON P3E 3N5
         %img.map-image{:src => "../img/bureau-map.jpg"}
       %ul.contact-list
         %li
           %a{:href =>"mailto:hello@bureau.ca"}
-            %span hello@bureau.ca
+            %span bonjour@bureau.ca
         %li 
           %span.txt-bold.t T 
           %span 705 586 3189

@@ -9,30 +9,30 @@ title: "Worksheet - Bureau"
 
 %section.l-module--wide 
   .l-container--narrow
-    %h1.header--grey.txt-center Worksheet
+    %h1.header--grey.txt-center Tableau de projet
     %h2.intro-subhead.txt-center.worksheet-intro 
-      Fill out a project worksheet to speed up the briefing process, or just 
+      Veuillez remplir un tableau de projet afin d’accélérer le processus d’analyse de vos besoins. Si vous préférez, vous pouvez simplement
       %a{:href=>"mailto:hello@bureau.ca"}
-        %span contact us directly.
+        %span communiquer avec nous directement.
 
     %form{ :novalidate => "", :method => "post", :action => "worksheet-form-handler.php", :id => "worksheet-form", "data-validate" => "parsley", "data-error-container"=>"#workform-errors"}
       %fieldset
-        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Your full name", :required => "required", "data-error-message" =>"We need your name!"}
-        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Your email address", :required => "required", "data-error-message" =>"Hey, what's with your email?" }
-        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Your phone number", :required => "required", "data-error-message" =>"Give us your phone number so we can call you."}
-        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Your company", :required => "required", "data-error-message" =>"What's your company name?"}
-        %input{ :type => "text", :class => "input-field", :name => "project", :placeholder => "What type of project?", :required => "required", "data-error-message" =>"We need to know the type of project, it can be anything!"}
-        %input{ :type => "text", :class => "input-field", :name => "timeframe", :placeholder => "What's your timeframe?", :required => "required", "data-error-message" =>"Come on, make up a timeframe :)"}
-        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Tell us more...", :required => "required", "data-error-message" =>"Tell us something about the project!"}
-        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Submit"}
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Nom!"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique!" }
+        %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Votre numéro de téléphone", :required => "required", "data-error-message" =>"Votre numéro de téléphone!"}
+        %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Votre entreprise", :required => "required", "data-error-message" =>"Votre entreprise!"}
+        %input{ :type => "text", :class => "input-field", :name => "project", :placeholder => "De quel type de projet s’agit-il?", :required => "required", "data-error-message" =>"De quel type de projet s’agit-il?"}
+        %input{ :type => "text", :class => "input-field", :name => "timeframe", :placeholder => "Quelles sont vos échéances?", :required => "required", "data-error-message" =>"Quelles sont vos échéances?"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Vos précisions utiles…", :required => "required", "data-error-message" =>"Vos précisions utiles…"}
+        %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Soumettre"}
         .working-with.contact-bg
           %span#working-with-close 
             +
           %span#working-with-trigger 
-            Working with Bureau
+            Travailler avec Bureau
           %ul.working-with-list#working-with-list
-            %li.txt-bold Great projects take time.
-            %li.txt-bold Great teams require great pay.  
-            %li.list-spaced We're not a template shop. We're a fully custom design and code agency that delivers world class marketing and creates excellent results.
-            %li Sound good? Good.
+            %li.txt-bold Pour réaliser un excellent projet, il faut y mettre du temps. 
+            %li.txt-bold Pour profiter d’une excellente équipe, il faut y mettre de l’argent.   
+            %li.list-spaced Nous ne recourons pas aux solutions préconçues. Notre firme produit des conceptions et des codages originaux pour un marketing de classe mondiale et des résultats supérieurs.
+            %li Ça vous convient? Certainement.
         #workform-errors
