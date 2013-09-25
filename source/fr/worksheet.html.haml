@@ -17,13 +17,13 @@ title: "Tableau de projet - Bureau"
 
     %form{ :novalidate => "", :method => "post", :action => "worksheet-form-handler.php", :id => "worksheet-form", "data-validate" => "parsley", "data-error-container"=>"#workform-errors"}
       %fieldset
-        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Nom!"}
-        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique!" }
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Votre nom"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique" }
         %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Votre numéro de téléphone", :required => "required", "data-error-message" =>"Votre numéro de téléphone!"}
         %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Votre entreprise", :required => "required", "data-error-message" =>"Votre entreprise!"}
         %input{ :type => "text", :class => "input-field", :name => "project", :placeholder => "De quel type de projet s’agit-il?", :required => "required", "data-error-message" =>"De quel type de projet s’agit-il?"}
         %input{ :type => "text", :class => "input-field", :name => "timeframe", :placeholder => "Quelles sont vos échéances?", :required => "required", "data-error-message" =>"Quelles sont vos échéances?"}
-        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Vos précisions utiles…", :required => "required", "data-error-message" =>"Vos précisions utiles…"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Votre message…", :required => "required", "data-error-message" =>"Votre message…"}
         %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Soumettre"}
         .working-with.contact-bg
           %span#working-with-close 
@@ -36,3 +36,4 @@ title: "Tableau de projet - Bureau"
             %li.list-spaced Nous ne recourons pas aux solutions préconçues. Notre firme produit des conceptions et des codages originaux pour un marketing de classe mondiale et des résultats supérieurs.
             %li Ça vous convient? Certainement.
         #workform-errors
+

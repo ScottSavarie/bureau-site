@@ -3,11 +3,11 @@
     %h1.header--grey.txt-center Prenez contact
     %form{ :novalidate => "", :method => "post", :action => "contact-form-handler.php", :id => "contact-form", "data-validate" => "parsley", "data-error-container"=>"#contactform-errors"}
       %fieldset
-        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Nom!"}
-        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique!"}
+        %input{ :type => "name", :class => "input-field", :name => "name", :placeholder => "Votre nom au complet", :required => "required", "data-error-message" =>"Votre nom"}
+        %input{ :type => "email", :class => "input-field", :name => "email", :placeholder => "Votre adresse électronique", :required => "required", "data-error-message" =>"Votre adresse électronique"}
         %input{ :type => "tel", :class => "input-field", :name => "tel", :placeholder => "Votre numéro de téléphone"}
         %input{ :type => "text", :class => "input-field", :name => "text", :placeholder => "Votre entreprise"}
-        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Vos précisions utiles…", :required => "required", "data-error-message" =>"Vos précisions utiles!"}
+        %textarea{ :class => "input-field--message", :name => "message", :placeholder => "Votre message…", :required => "required", "data-error-message" =>"Votre message"}
         %input{ :type => "submit", :name => "submit", :id => "submit", :class => "btn-primary", :value => "Soumettre"}
     .contact-details-container 
       #contactform-errors    
@@ -35,9 +35,6 @@
           %span 705 586 3197
     %span.close-trigger#close-trigger
       ×
-
-
-
 
 
 
