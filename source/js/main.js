@@ -130,7 +130,7 @@ $(document).ready(function() {
 ============================================================================== */
 
 $("#videotrigger").click(function () { 
-    $("#videotarget").attr("src", "//www.youtube.com/embed/Ml5pFLaNuzE?list=PL6NX9H_ihCfDqariNCYuP8Tqu3AfZ_Ik6&amp;title=0&amp;modestbranding=1&amp;showinfo=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=1&amp;autohide=1&amp;controls=0&amp;loop=1");
+    $("#videotarget").attr("src", "//www.youtube.com/embed/sM5ESv8MpNM?list=PL6NX9H_ihCfD2vpJ4KmX4eHqq7C68xGP3&amp;title=0&amp;modestbranding=1&amp;showinfo=0&amp;byline=0&amp;portrait=0&amp;color=757778&amp;autoplay=1&amp;autohide=1&amp;controls=0&amp;loop=1");
     $(this).hide(0);
 
 });
