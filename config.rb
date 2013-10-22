@@ -2,8 +2,6 @@
 # Compass
 ###
 
-
-
 # Susy grids in Compass
 # First: gem install susy
 # require 'susy'
@@ -21,6 +19,8 @@
 #
 # With no layout
 page "styleguide.html", :layout => false
+page "/sitemap.xml", :layout => false
+page "/sitemap.html", :layout => false
 
 #
 # With alternative layout
@@ -80,6 +80,7 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 
+require "builder"
 
   
 end
