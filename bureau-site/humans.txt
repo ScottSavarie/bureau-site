@@ -4,6 +4,10 @@
 # TEAM
 
     <Scott Savarie> -- <Developer> -- <@ScottSavarie>
+    Developer: Scott Savarie
+	Contact: scottsavarie [at] gmail.com
+	Twitter: @ScottSavarie
+	From: Ontario, Canada
 
 # THANKS
 
@@ -13,3 +17,8 @@
 
     HTML5, CSS3
     jQuery, Modernizr
+    Middleman
+		
+
+# SITE
+	Language: English / French
