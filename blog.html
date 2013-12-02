@@ -13,14 +13,14 @@
             <!-- <![endif] -->
             <head>
                <title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} - {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/modernizr.custom.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/modernizr.custom.js'></script>
                <meta content='' name='description'>
                <meta content='width=device-width' name='viewport'>
                <meta content='yes' name='apple-mobile-web-app-capable'>
                <meta content='yes' name='apple-touch-fullscreen'>
                <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-               <link href='http://www.bureaugroup.ca/bureau-site/css/style.css' rel='stylesheet'>
-               <link href='http://www.bureaugroup.ca/bureau-site/webfonts/ss-social.css' rel='stylesheet'>
+               <link href='http://www.bureaugroup.ca/css/style.css' rel='stylesheet'>
+               <link href='http://www.bureaugroup.ca/webfonts/ss-social.css' rel='stylesheet'>
                <meta charset="utf-8">
                <meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage}" />
                <meta name="color:Accent" content="#4EA3D0"/>
@@ -58,7 +58,7 @@
                   <span class='red-bar'></span>
                   <div class='l-container--full nav-wrap'>
                      <div class='nav-bar'>
-                        <a class="logo" href="http://www.bureaugroup.ca/bureau-site/index.html">
+                        <a class="logo" href="http://www.bureaugroup.ca/index.html">
                            <h1>Bureau</h1>
                         </a>
                         <div class='nav-btn' id='navtoggle'>
@@ -70,13 +70,13 @@
                      <div class='nav-container nav-hidden'>
                         <ul class='nav-links'>
                            <li>
-                              <a class="page-work__link" href="http://www.bureaugroup.ca/bureau-site/work.html">Work</a>
+                              <a class="page-work__link" href="http://www.bureaugroup.ca/work.html">Work</a>
                            </li>
                            <li>
-                              <a class="page-profile__link" href="http://www.bureaugroup.ca/bureau-site/profile.html">Profile</a>
+                              <a class="page-profile__link" href="http://www.bureaugroup.ca/profile.html">Profile</a>
                            </li>
                            <li>
-                              <a class="page-services__link" href="http://www.bureaugroup.ca/bureau-site/services.html">Services</a>
+                              <a class="page-services__link" href="http://www.bureaugroup.ca/services.html">Services</a>
                            </li>
                            <li>
                               <a class="page-blog__link" href="http://www.bureauuser.tumblr.com">Blog</a>
@@ -132,14 +132,14 @@
                         <a class='contact-map' href='http://goo.gl/maps/fLbOM' target='blank'>
                            <div class='contact-pin-wrap'>
                               <div class='contact-pin'>
-                                 <img class='bureau-office' src='http://www.bureaugroup.ca/bureau-site/img/bureau-office.jpg'>
+                                 <img class='bureau-office' src='http://www.bureaugroup.ca/img/bureau-office.jpg'>
                                  <ul class='bureau-address'>
                                     <li class='bureau-title'>Bureau</li>
                                     <li class='bureau-address-list'>170 Elgin St Greater Sudbury, ON P3E 3N5</li>
                                  </ul>
                               </div>
                            </div>
-                           <img class='map-image' src='http://www.bureaugroup.ca/bureau-site/img/bureau-map.jpg'>
+                           <img class='map-image' src='http://www.bureaugroup.ca/img/bureau-map.jpg'>
                         </a>
                         <ul class='contact-list'>
                            <li>
@@ -667,20 +667,20 @@
                  </div>
                </div>
                </footer>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/jquery-1.8.3.min.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/log-polyfill.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/placeholder.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/parsley.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/respond.min.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/ss-social.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/modules/tumblrfeed.js'></script>
-               <script src='http://www.bureaugroup.ca/bureau-site/js/main.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/jquery-1.8.3.min.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/log-polyfill.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/placeholder.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/parsley.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/respond.min.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/ss-social.js'></script>
+               <script src='http://www.bureaugroup.ca/js/modules/tumblrfeed.js'></script>
+               <script src='http://www.bureaugroup.ca/js/main.js'></script>
                <script>
                $(function() {
-                    var url = '/rss';
+                    var url = 'http://blog.bureaugroup.ca/rss';
                     var $list = $('#recent-posts');
                     $.ajax({
-                        url: 'http://bureauuser.tumblr.com/rss',
+                        url: 'http://blog.bureaugroup.ca/rss',
                         type: 'GET',
                         dataType: 'xml',
                         success: function(data) {                
