@@ -1,1 +1,0 @@
-function OnLoad(){var e=new google.feeds.FeedControl;e.addFeed("http://bureauuser.tumblr.com/rss"),e.setNumEntries(2),e.draw(document.getElementById("tumblrfeed"))}google.load("feeds","1"),google.setOnLoadCallback(OnLoad);
